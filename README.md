@@ -1,3 +1,7 @@
-# Learning And Practicing Phyton
+# REPO, CURRICULUM, ONSTALLATION
 
-ALL INFO IS INSIDE NUMERATED BRANCHES
+## REPO AND SITE
+
+<https://github.com/nnja/python>
+
+<https://www.learnpython.dev/>
