@@ -62,3 +62,18 @@ going_home = """
 "\nlooking around\nbuilding ships'\nin the place of joy\n"
 ```
 
+# `f""` STRINGS SU NACIN DA PISES ONAKVE STRINGOVE, KAKVI SE U JAVASCRIPTU ZOVU STRING INTERPOLATION
+
+EVO BICE TI JASNO NAKON STO OVO POGLEDAS
+
+```py
+>>> char1 = "Lando"
+>>> place = "Mars"
+>>> race = "Salamatrian"
+>>> interpolated = f"{char1} lives on the planet {place}, a land of {race}s."
+>>> interpolated
+'Lando lives on the planet Mars, a land of Salamatrians.'
+
+```
+
+POMENUTO JE FANCY NEW STUFF IN PYTHON
