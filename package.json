@@ -1,0 +1,21 @@
+{
+  "name": "learning_and_practicing_phyton",
+  "version": "1.0.0",
+  "description": "REPL ZNACI: \"READ EVAL PRINT LOOP\"",
+  "main": "index.js",
+  "scripts": {
+    "gi": "git add -A && git commit -am '👾' && git push",
+    "g2": "git add -A && git commit -am '👾'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rade58/learning_n_practicing_PHYTON.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rade58/learning_n_practicing_PHYTON/issues"
+  },
+  "homepage": "https://github.com/Rade58/learning_n_practicing_PHYTON#readme"
+}
