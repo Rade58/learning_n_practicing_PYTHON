@@ -108,3 +108,11 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 ```
+
+# KADA DEVIDE-UJES DVA BROJA, IAKO TI JE DELJENIK INTEGER, I AKO TI JE DELILAC INTEGER; I AKO BI TREBALO DA DOBIJES CEO BROJ, TI CES IPAK DOBITI (DOT ZERO) FLOATING POINT
+
+```py
+>>> 4/2
+2.0
+
+```
