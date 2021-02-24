@@ -25,9 +25,17 @@ A LI TO NIJE SLUCAJ U STRINGU KOJI IMA QUOTATION MARKS
 SyntaxError: invalid syntax
 ```
 
-# ALI IMAS I BACKLASH (`\`) NA RASPOLAGANJU
+**I MISSMATCHING QUOTES CE TI DATI ERROR**
 
-SADA CE SVE BITI OK
+```py
+>>> foo = "life is journey'
+  File "<stdin>", line 1
+    foo = "life is journey'
+                          ^
+SyntaxError: EOL while scanning string literal
+```
+
+# IMAS I BACKLASH (`\`) NA RASPOLAGANJU
 
 ```py
 >>> 'You\'re Splinter'
