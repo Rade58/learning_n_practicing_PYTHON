@@ -74,12 +74,15 @@ EVO DA ISPROBAM JEDNU
 ```py
 >>> baz = int(8)
 >>> bar = float(-8.0)
+>>> yota = float('8')
 
 
 >>> baz
 8
 >>> bar
 -8.0
+>>> yota
+8
 
 
 >>> type(baz)
@@ -87,6 +90,9 @@ EVO DA ISPROBAM JEDNU
 
 >>> type(bar)
 <class 'float'>
+
+>>> type(yota)
+<class 'int'>
 ```
 
 # MOGU RADITI I MATEMATICKE OPERACIJE KAO STO SU OVE
