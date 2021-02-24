@@ -94,10 +94,11 @@ U NEKOJ RANIJOJ SINTAKSI PYTHONA MOZES VIDETI UPOTREBU `.format` METODE, STO JE 
 # AKO POKUAS DA CONCATANATE-UJES INTEGER I STRING ILI FLOAT I STRING, DOBICES ERROR
 
 ```py
->>> 101.8 + " dalamtians"
+>>> -101.8 + " dalamtians"
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for +: 'float' and 'str'
+# ERROR MESSAGE MOZE PONEKAD BITI RAZLICIT U OVOM SLUCAJU
 ```
 
 **U JAVASCRIPTU JE GORE POMENUTO DOZVOLJENO**
