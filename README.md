@@ -54,3 +54,23 @@ AKO NE RADIM NISTA MATHY DA SE TAKO IZRAZIM, NECU MORATI DA KORISTIM KOMPLEKSNE 
 >>> dir(foo)
 ['__abs__', '__add__', '__bool__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getformat__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__int__', '__le__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__pos__', '__pow__', '__radd__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rmod__', '__rmul__', '__round__', '__rpow__', '__rsub__', '__rtruediv__', '__set_format__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', 'as_integer_ratio', 'conjugate', 'fromhex', 'hex', 'imag', 'is_integer', 'real']
 ```
+
+# ZATO STO SU U PITANJU OBJEKTI MOZES DA PRAVIS I `int` I `float` INSTANCE
+
+```py
+>>> baz = int(8)
+>>> bar = float(-8.0)
+
+
+>>> baz
+8
+>>> bar
+-8.0
+
+
+>>> type(baz)
+<class 'int'>
+
+>>> type(bar)
+<class 'float'>
+```
