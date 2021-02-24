@@ -33,6 +33,7 @@ SyntaxError: invalid syntax
     foo = "life is journey'
                           ^
 SyntaxError: EOL while scanning string literal
+# EOL znaci `end of line`
 ```
 
 # IMAS I BACKLASH (`\`) NA RASPOLAGANJU
@@ -89,3 +90,14 @@ POMENUTO JE FANCY NEW STUFF IN PYTHON
 JEDINO STO MORAS ZAPAMTITI DA SE KORISTIT f SA DOUBLE QUOTES I NE KORISTI SE `\``
 
 U NEKOJ RANIJOJ SINTAKSI PYTHONA MOZES VIDETI UPOTREBU `.format` METODE, STO JE RADILO NESTO SLICNO, AL ISADA SVI KORISTE f STINGS ,MEDJUTIM MOZDA CES U NEKOJ STARIJOJ SINTAKSI NAICI NA TAJ .format
+
+# AKO POKUAS DA CONCATANATE-UJES INTEGER I STRING ILI FLOAT I STRING, DOBICES ERROR
+
+```py
+>>> 101.8 + " dalamtians"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+```
+
+**U JAVASCRIPTU JE GORE POMENUTO DOZVOLJENO**
