@@ -65,3 +65,22 @@ STO ZNACI DA POZIV FUNKCIJE MOZES DODELITI NEKOJ VARIJABLOJ
 >>> something
 8
 ```
+
+# NARAVNO FUNKCIJA MOZE ACCEPT-OVATI I ARGUMENTS; A MOZES DEFINISATI I DEFAULT ARGUMENT
+
+```py
+>>> def baz(x, y = 0):
+...     return x + y
+... 
+
+>>> nesto = baz(8)
+>>> nesto_drugo = baz(8, 10)
+
+
+>>> nesto
+8
+>>> nesto_drugo
+18
+
+```
+
