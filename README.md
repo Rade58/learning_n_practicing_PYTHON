@@ -111,4 +111,16 @@ SyntaxError: invalid syntax
            ^
 SyntaxError: invalid syntax
 
+# NISAM DODAO INDENTATION PRE return IZJAVE
+>>> def baget():
+... return "chicken"
+  File "<stdin>", line 2
+    return "chicken"
+    ^
+IndentationError: expected an indented block
+>>> 
 ```
+
+# FUNKCIJA, POGOTOVO AKO JE SIMPLE, MOZE BITI I U JEDNOM LINE-U
+
+NECES IMATI NIKAKAV ERROR
