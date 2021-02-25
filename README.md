@@ -29,3 +29,28 @@ ALI `U FAJLOVIMA SE SAVETUJE DA SE KORISTE SPACE-OVI ZA INDENTATION`
 ## KADA SI U REPLU I PISES FUNKCIJU, BICES U ONOM `...` MODE-U, JER PRITISKAS ENTER KADA ZAVRSIS PISANJE NECEGA
 
 **AKO HOCES DA ZAVRSIS PISANJE FUNKCIJE PRITISNI DUPLI ENTER I TADA CES IZACI IZ TOG ... MODE-A**
+
+# SADA CU DEFINISATI, PA ONDA I POZVATI, MOJU PRVU PYTHON FUNKCIJU
+
+TO CU NARAVNO RADITI U REPLU ZA SADA
+
+```py
+>>> def foo():
+...     print("fooish!")
+... 
+>>> foo()
+fooish!
+```
+
+# NARAVNO, FUNKCIJA MOZE IMATI I POVRATNU VREDNOST; A ONO STO SE TADA KORISTI JE `return` KEYWORD
+
+```py
+>>> def bar():
+...     name = "Carla"
+...     last_name = "Del Ponte"
+...     return f"{name} {last_name}"
+... 
+>>> bar()
+'Carla Del Ponte'
+
+```
