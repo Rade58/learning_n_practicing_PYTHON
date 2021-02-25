@@ -91,3 +91,14 @@ STO ZNACI DA POZIV FUNKCIJE MOZES DODELITI NEKOJ VARIJABLOJ
 
 ```
 
+# NE BOJ SE AKO POGRESIS U DEFINISANJU FUNKCIJE, JER CE PYTHON DATI HELPFUL TRACEBACK SYNTAX ERROR
+
+```py
+# NISAM DODAO :
+>>> def gresnaFunkcija()
+  File "<stdin>", line 1
+    def gresnaFunkcija()
+                       ^
+SyntaxError: invalid syntax
+>>> 
+```
