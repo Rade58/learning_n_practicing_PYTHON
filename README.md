@@ -73,7 +73,9 @@ EVO DA ISPROBAM JEDNU
 
 ```py
 >>> baz = int(8)
->>> bar = float(-8.0)
+>>> bar = float(-8)
+# COOL STVAR JE STO MOZES DA PASS-UJES STRING-OVE I TO CE FUNKCIONISATI
+# ISTO TAKO IAKO SI UBACIJO STRING INTEGERA, TO CE BITI FLOAT
 >>> yota = float('8')
 
 
@@ -82,7 +84,7 @@ EVO DA ISPROBAM JEDNU
 >>> bar
 -8.0
 >>> yota
-8
+8.0
 
 
 >>> type(baz)
@@ -92,7 +94,7 @@ EVO DA ISPROBAM JEDNU
 <class 'float'>
 
 >>> type(yota)
-<class 'int'>
+<class 'float'>
 ```
 
 # MOGU RADITI I MATEMATICKE OPERACIJE KAO STO SU OVE
