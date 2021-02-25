@@ -12,3 +12,15 @@ ALI EVO DA TI OPET POKAZEM
 >>> some
 5
 ```
+
+U SUPROTNOM DA NEMAS DEFAULT PARAMETAR, DOBIO BY TYPE ERROR
+
+```py
+>>> def bar(x):
+...     return x
+... 
+>>> something_else = bar()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: bar() missing 1 required positional argument: 'x'
+```
