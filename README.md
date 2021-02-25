@@ -101,6 +101,13 @@ ISTO TAKO, ZA RAZLIKU OD CONCATANATION-A OVDE SMES PASS-OVATI BROJEVE
 
 ```
 
+A MOZES I PASS-OVATI NEKE MATEMATICKE OPERACIJE
+
+```py
+>>> f"You get a half of something if you multiply by {1/2}"
+'You get a half of something if you multiply by 0.5'
+```
+
 # AKO POKUAS DA CONCATANATE-UJES INTEGER I STRING ILI FLOAT I STRING, DOBICES ERROR
 
 ```py
