@@ -100,5 +100,13 @@ STO ZNACI DA POZIV FUNKCIJE MOZES DODELITI NEKOJ VARIJABLOJ
     def gresnaFunkcija()
                        ^
 SyntaxError: invalid syntax
->>> 
+
+
+# NISAM DODAO ()
+>>> def oops
+  File "<stdin>", line 1
+    def oops
+           ^
+SyntaxError: invalid syntax
+
 ```
