@@ -25,13 +25,23 @@ Traceback (most recent call last):
 TypeError: bar() missing 1 required positional argument: 'x'
 ```
 
-# ZA RAZLIKU OD JAVASCRIPTA, TI MORAS PROSLEDITI ONOLIKO ARGUMENATA KOLIKO SI PARAMETARA DEFINISAO
+# ZA RAZLIKU OD JAVASCRIPTA, TI MORAS PROSLEDITI ONOLIKO ARGUMENATA KOLIKO SI PARAMETARA DEFINISAO; DAKLE SVI ARGUMENTI SU REQUIRED
 
 ```py
+>>> def eksFunk(x,y):
+...     return x
+... 
+>>> nesto = eksFunk(2,2) # OVO JE OK
 
+# ALI CE OVO DATI ERROR
+>>> blah= eksFunk(2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: eksFunk() missing 1 required positional argument: 'y'
 ```
 
-# POSTOJE I KEYWORD ARGUMENTS ILI KKO IH JOS NAZIVAJU kwargs
+# POSTOJE I KEYWORD ARGUMENTS ILI KKO IH JOS NAZIVAJU kwargs; A ONI TI OMOGUCUJU DA TI PROSLEDJUJES ARGUMENTE, ONIM REDOM KOJI TI ZELIS, A NE
+
 
 
 
