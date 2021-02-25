@@ -47,5 +47,23 @@ NameError: name 'last_name' is not defined
 
 USTVARI KAKO VIDIS ERROR JE USTVARI `NameError`
 
+# A STA AKO POKUSAM DA KORISTIM ISTOIMENU VARIJABLU IZ GLOBALNO OBIMA, PRE DEKLARACIJE TE ISTOIMENE LOKALNE VARIJABLE
 
+EVO VIDI IZ PRIMERA
 
+```py
+>>> name = "Kevin"
+>>> def foo():
+...     print(name)
+...     name = "Andrew"
+...     print(name)
+...     return name
+... 
+>>> foo()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in foo
+UnboundLocalError: local variable 'name' referenced before assignment
+```
+
+IMAS ERROR KAKO SI KORISTIO LOKANU VARIJABLU PRE NJENE DEKLARACIJE
