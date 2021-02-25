@@ -24,3 +24,14 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: bar() missing 1 required positional argument: 'x'
 ```
+
+# ZA RAZLIKU OD JAVASCRIPTA, TI MORAS PROSLEDITI ONOLIKO ARGUMENATA KOLIKO SI PARAMETARA DEFINISAO
+
+```py
+
+```
+
+# POSTOJE I KEYWORD ARGUMENTS ILI KKO IH JOS NAZIVAJU kwargs
+
+
+
