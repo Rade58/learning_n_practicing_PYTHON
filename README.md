@@ -82,5 +82,12 @@ STO ZNACI DA POZIV FUNKCIJE MOZES DODELITI NEKOJ VARIJABLOJ
 >>> nesto_drugo
 18
 
+
+>>> global_1 = 2
+>>> global_2 = 6
+>>> baz(global_1, global_2)
+8
+
+
 ```
 
