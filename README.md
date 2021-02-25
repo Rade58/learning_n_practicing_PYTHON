@@ -146,3 +146,19 @@ NECES IMATI NIKAKAV ERROR
 >>> type(tool)
 <class 'NoneType'>
 ```
+
+# MOZES TAKODJE I DA NAPISES return STATEMENT BEZ VALUE-A
+
+OVO SAM U JAVASCRIPT-U KORISTIO DA ESCAPE-UJEM FROM SOME LOOP ILI U USLOVNOJ IZJAVI DA EXIT-UJEM FUNKCIJU DA SE NESTO STO JE ISPOD IZJAVE NE BI IZVRSILO
+
+```py
+>>> def baz():
+...     return
+... 
+>>> blanket = baz()
+>>> blanket
+>>> type(blanket)
+<class 'NoneType'>
+```
+
+KAO STO VIDIS A I LOGICNO JE, I OVDE CE FUNKCIJA RETURN-OVATI None
