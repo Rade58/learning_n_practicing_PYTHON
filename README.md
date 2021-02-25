@@ -134,3 +134,15 @@ NECES IMATI NIKAKAV ERROR
 'Andy Johnson'
 
 ```
+
+# AKO NE OBEZBEDIS RETURNED VALUE FUNCIJA RETURN-UJE `None`
+
+```py
+>>> def giverOfNothing():
+...     name = "soemone"
+... 
+>>> tool = giverOfNothing()
+>>> tool
+>>> type(tool)
+<class 'NoneType'>
+```
