@@ -54,3 +54,14 @@ fooish!
 'Carla Del Ponte'
 
 ```
+
+STO ZNACI DA POZIV FUNKCIJE MOZES DODELITI NEKOJ VARIJABLOJ
+
+```py
+>>> def nekaFunkcija():
+...     return 8
+... 
+>>> something = nekaFunkcija()
+>>> something
+8
+```
