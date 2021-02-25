@@ -29,3 +29,23 @@ NAJBOLJE DA TI TO POKAZEM IZ PRIMERA
 'Stavros'
 >>> 
 ```
+
+# A GLOBALNI OBIM, NE SAMO DA NE MOZE MENJATI VARIJABLU IZ NEKOG LOKALNOG OBIM, VEC NEMA NI PRISTUP TAKVOJ VARIJABLOJ
+
+EVO IMACES REFERENCE ERROR
+
+```py
+>>> def baz():
+...     last_name = "Mullen"
+...     return last_name
+... 
+>>> last_name
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'last_name' is not defined
+```
+
+USTVARI KAKO VIDIS ERROR JE USTVARI `NameError`
+
+
+
