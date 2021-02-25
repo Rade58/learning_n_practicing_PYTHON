@@ -124,3 +124,11 @@ IndentationError: expected an indented block
 # FUNKCIJA, POGOTOVO AKO JE SIMPLE, MOZE BITI I U JEDNOM LINE-U
 
 NECES IMATI NIKAKAV ERROR
+
+```py
+>>> def nameGiver(name): return name + " Johnson"
+... 
+>>> nameGiver("Andy")
+'Andy Johnson'
+
+```
