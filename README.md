@@ -35,3 +35,13 @@ EVO NEKOLIKO LISTA
 >>> list("12345678")
 ['1', '2', '3', '4', '5', '6', '7', '8']
 ```
+
+VIDIS KAKVE SU SVE MOGUCNOSTI OVE BIUILT IN METODE IZ GORNJEG PRIMERA
+
+# A DA POTVRDIS O TOME DA JE TO LIST TYPE, MOZES KORISTITI `type()` HELPER
+
+```py
+>>> type([])
+<class 'list'>
+```
+
