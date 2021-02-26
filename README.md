@@ -79,8 +79,8 @@ KORISTICU I CONTROL FLOW (USLOVNE IZJAVE), IAKO SE NJIMA TEK TREBAM POZABAVITI
 ...     else:
 ...             return x + y
 ... 
->>> foo = calculate(y = 4, x = 16)
->>> bar = calculate(6, 2, "add")
+>>> foo = calculate(y = 4, x = 16) # OVDE SAM KORISTIO KEYWORD ARGUMENTS
+>>> bar = calculate(6, 2, "add") # OVDE POSITIONAL
 >>> foo
 12
 >>> bar
