@@ -68,4 +68,21 @@ MISLIM DA JE KOMENTAR SUVISAN, SVE JE JASNO
 
 # DA SE PODSETIM NA POSITIONAL (OBICNI) I KEYWORD (KOJI KORISTE LABEL) ARGUMENTE
 
+TO CU URADITI PUTEM PRIMERA
 
+KORISTICU I CONTROL FLOW (USLOVNE IZJAVE), IAKO SE NJIMA TEK TREBAM POZABAVITI
+
+```py
+>>> def calculate(x, y, operation = "substract"):
+...     if operation == "substract":
+...             return x - y
+...     else:
+...             return x + y
+... 
+>>> foo = calculate(y = 4, x = 16)
+>>> bar = calculate(6, 2, "add")
+>>> foo
+12
+>>> bar
+8
+```
