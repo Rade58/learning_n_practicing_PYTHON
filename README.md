@@ -15,3 +15,16 @@
 10
 >>> 
 ```
+
+# OPET TI GOVORIM DA OBRACIS PANJU NA SCOPE, KOJI SE U PYTHONU ODREDJUJE INDENTATION-OM
+
+AKO NE DODAS INDENTATION IMACES INDENTATION ERROR
+
+```py
+def bar():
+... x = 4
+  File "<stdin>", line 2
+    x = 4
+    ^
+IndentationError: expected an indented block
+```
