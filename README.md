@@ -1,2 +1,37 @@
 # LISTS
 
+DAKLE SADA CU GOVORITI OD ADVANCED DATA TYPES; ODNOSNO O **`ADVANCED CONTAINER TYPES`**, A LISTE SU JEDAN OD TIH TYPE-OVA
+
+**U PITANJU SU `CONTAINERS OBJECT` KOJI MI POMAZU DA ORGANIZUJEMO DATA U ONE DATA STRUCTURE, ODNOSNO U KOLEKCIJE SA KOJIMA MOZEMO LATER RADITI**
+
+## CHEATSHEET
+
+IMAS GA OVDE:
+
+<https://www.learnpython.dev/02-introduction-to-python/080-advanced-datatypes/10-lists/#list-cheat-sheet>
+
+TU MOZES VIDETI, MOST IMPORTANT INFORMATIONS
+
+# JA SAM RANJE VEC NA JEDAN NACIN PRAVIO LIST
+
+EVO NEKOLIKO LISTA
+
+```py
+>>> []
+[]
+>>> [1,2,3,4]
+[1, 2, 3, 4]
+```
+
+# TAKODJE MOGUCE JE KORISTITI METODU KOJA PRAVI LIST
+
+```py
+>>> list()
+[]
+>>> list([8,6,4,8])
+[8, 6, 4, 8]
+>>> list("nesto")
+['n', 'e', 's', 't', 'o']
+>>> list("12345678")
+['1', '2', '3', '4', '5', '6', '7', '8']
+```
