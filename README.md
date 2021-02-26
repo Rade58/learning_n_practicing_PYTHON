@@ -73,8 +73,8 @@ TO CU URADITI PUTEM PRIMERA
 KORISTICU I CONTROL FLOW (USLOVNE IZJAVE), IAKO SE NJIMA TEK TREBAM POZABAVITI
 
 ```py
->>> def calculate(x, y, operation = "substract"):
-...     if operation == "substract":
+>>> def calculate(x, y, operation = "subtract"):
+...     if operation == "subtract":
 ...             return x - y
 ...     else:
 ...             return x + y
