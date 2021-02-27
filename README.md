@@ -7,5 +7,9 @@ ALI MOGUCE JE DA LISTA CONTAIN-UJE I OSTALE COMPLEX MUTABLE CONTAINER TYPES
 MOZES U LISTU DA STVIS I DRUGE LISTE
 
 ```py
-
+>>> list_1 = [1,2]
+>>> list_2 = [8,6]
+>>> list_3 = [list_1, list_2]
+>>> list_3
+[[1, 2], [8, 6]]
 ```
