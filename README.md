@@ -56,3 +56,26 @@ EVO NA PRIMER, LENGTH LISTE BI UZIMAO TAKO STO, KORISTIM `len` METHOD
 ```
 
 ALI KAKO VIDIM, IPAK MOGU DA NADJEM NEKE METODE NA LISTI; MOZDA JE REC O NEKIM SHORTHAND-OVIMA, KOJI USTVARI KORISTE TE 'STANDALONE' GLOBALNE BUILT IN METODE
+
+TO JE METODA ILI ACCESS-OR, KOJI KORISTI UNDERSCORE SINTAKSU
+
+```py
+>>> my_list.__len__()
+4
+```
+
+NARAVNO ZA OVU GORNJU METODU SAM SAZNAO KORISTECI `dir` METODU A I `help` METODU
+
+```py
+>>> dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> 
+```
+
+DOBRO HELP MI NIJE BAS REKAO MNOGO ALI MI JE STAMPAO CELU METODU
+
+```py
+>>> help(my_list.__len__)
+# DA TI NE POKAZUJEM STA JE STAMPANO, JER I NIJE BILO BAS HELPFUL
+# ALI SVE JE INTUITIVNO
+```
