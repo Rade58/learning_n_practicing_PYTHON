@@ -148,3 +148,12 @@ Traceback (most recent call last):
 IndexError: list index out of range
 ```
 
+# DA UPDATE-UJES NEKI ITEM U LISTI KORISTIS ISTI NOTATION, KAO I U JAVASCRIPT-U
+
+```py
+>>> some_list = [1,2,3,4]
+>>> some_list[0] = 8
+>>> some_list[-1] = 8
+>>> some_list
+[8, 2, 3, 8]
+```
