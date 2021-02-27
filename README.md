@@ -97,3 +97,26 @@ NECE JE SORT-OVATI, NARAVNO
 [6, 2, 0, 1, 8]
 ```
 
+I KAO STO VIDIS LISTA JE ZAISTA REVERSOVANA
+
+# EVO TI NEKI PROCES PO KOJEM TI SAZNAJES KAKVE SVE METODE MOZES KORISTITI SA LISTOM
+
+```py
+# IMAS TVOJ DATASET
+>>> my_list = [8,4,5,1]
+# PROVERIS KOJEG JE ON TIPA
+>>> type(my_list)
+<class 'list'>
+```
+
+ONDA POGLEDAS KAKVE SU SVE METODE VEZANE ZA NJEGA
+
+```py
+>>> dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+```
+
+MADA SI U `dir` MOGAO DA PROSLEDIS I SAMU LISTU (my_list)
+
+METODE KOJE SU BEZ UNDERSCORE-A, CE BITI GENERALNO METODE ZA KOJE CARE-UJEM ABOUT
+
