@@ -1,6 +1,6 @@
 # REMOVING ITEMS FROM A LIST
 
-POSTOJI I NEKOLIKO NACINA ALI SE KORISTI JEDNA METODA
+POSTOJI I NEKOLIKO NACINA DA SE REMOVE-UJE ITEM FROM A LIST
 
 ## MOGUCE JE KORISTITI `list.remove`
 
@@ -61,4 +61,15 @@ A SADA CU UKLONITI SESTICU, KOJA JE NEGDE U SREDINI
 6
 >>> some_list
 [4, 12, 8]
+```
+
+## AKO SA pop POKUSAS DA UKLONIS, NEPOSTOJECI CLAN, ODNOSNO CAN ZA NEPOSTOJECI INDEX, DOBICES INDEX ERROR
+
+```py
+>>> some_list
+[4, 12, 8]
+>>> some_list.pop(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: pop index out of range
 ```
