@@ -13,3 +13,11 @@ MOZES U LISTU DA STVIS I DRUGE LISTE
 >>> list_3
 [[1, 2], [8, 6]]
 ```
+
+## LISTE TEND TO BE CONTAINERS ZA SIMILAR ITEMS, ALI NISTA TE NE SPECAVA I D STVIS RAZLICITE TYPE-OVE
+
+```py
+>>> list_4 = [True, "Tekst", None, 8]
+>>> list_4
+[True, 'Tekst', None, 8]
+```
