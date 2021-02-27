@@ -60,7 +60,6 @@ sort(self, /, *, key=None, reverse=False)
     ascending or descending, according to their function values.
     
     The reverse flag can be set to sort in descending order.
-(END)
 
 
 ```
