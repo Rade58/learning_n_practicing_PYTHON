@@ -78,3 +78,9 @@ ValueError: too many values to unpack (expected 2)
 'Kate'
 >>> 
 ```
+
+SAMO ZELIM DA KORISTIM vegetable I distance, A ZA UNDERSCORE VARIJABLE ME BAS BRIGA
+
+# MOZES I RETURN-OVATI TUPLES FROM FUNCTIONS, I PRI POZIVU RADITI UNPACKING
+
+
