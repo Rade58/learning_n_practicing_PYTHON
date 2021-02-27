@@ -123,7 +123,27 @@ TypeError: 'tuple' object does not support item assignment
 
 DAKLE TRACEBACK TYPE ERROR TI JE REKAO DA TUPLE-OVI NE SUPORT-UJU ITEM ASSIGNMENT
 
-# AKO SE SECAS TUPLE-OV IZ TYPESCRIPT-A, MOZES VIDETI DDOSTA SLICNOSTI
+# AKO SE SECAS TUPLE-OV IZ TYPESCRIPT-A, MOZES VIDETI DOSTA SLICNOSTI
+
+ISTO TREBA RECI DA TUPLES NA SEBI NEMAJU NIKAKVE METODE, BAR NE ONE KOJE BI CHANGE-OVLE ITEME; **JER OPET TI NAPOMINJEM D JE TUPLE IMMUTABLE**
+
+```py
+>>> dir(tuple)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> 
+```
+
+IMA METODU ZA SEARCHING INDEX-A I ZA KOLICINU SPECIFIED ITEM ARGUMENTA
+
+```py
+>>> a = 1,2,3,4
+>>> b = 2,8
+>>> a = 1,2,3,4,4
+>>> a.count(4)
+2
+>>> b.index(8)
+1
+```
 
 ## POSTO JE TUPLE IMMUTABLE TYPE, ON JE NA PRIMER DOBAR DA BUDE DICTIONARY KEY
 
