@@ -28,3 +28,28 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: list.remove(x): x not in list
 ```
+
+DOBIO SI VALUE ERROR
+
+# POSTOJI I `list.pop`, SA NJIM MOZES UKLONITI PRVI ILI POSLEDNJI CLAN, U ZAVISNOSTI DA LI ZA INDEX ARGUMENT ZDAS (-1) STO JE DEFAULT, ILI 0
+
+```py
+>>> some_list = [2, 4, 12, 6, 8, 0]
+>>> some_list.pop(0)
+2
+# UKLONIO SAM NULTI CLAN
+```
+
+SADA CU UKLONITI I POSLEDNJI CLAN
+
+```py
+>>> some_list
+[4, 12, 6, 8, 0]
+>>> some_list.pop()
+0
+# UKLONIO SAM POSLEDNJI CLAN
+>>> some_list
+[4, 12, 6, 8]
+```
+
+ISTO TAKO, MOES VIDETI DA JE POVRATNA VREDNOST METODE, UPRAVO UKLONJENI CLAN
