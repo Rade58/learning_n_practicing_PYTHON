@@ -123,8 +123,28 @@ DAKLE U PYTHONU O OVOME MORAM DA VODIM RACUNA POSEBNO,, ZA RAZLIKU OD JAVASCRIPT
 
 A TO JE DA SE CLANOVIMA SA NEGATIVNIM BROJEVIMA USTVARI PRISTUPA OD KRAJA
 
+S TIM STO SE KRECE OD MINUS JEDAN (`-1`)
+
 VIDIS NA STA MISLIM
 
 ```py
-
+>>> my_other_list = [1,2,3,4]
+>>> my_other_list[-1]
+4
+>>> my_other_list[-2]
+3
+>>> my_other_list[-3]
+2
+>>> my_other_list[-4]
+1
 ```
+
+A ISTO TAKO AKO SA NEGATIVNIM INDEKSOM POKUSAS DA PRISTUPIS NEGATIVNOM CLANU, DESICE SE INDEX ERROR
+
+```py
+>>> my_other_list[-8]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+```
+
