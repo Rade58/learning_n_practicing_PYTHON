@@ -59,3 +59,22 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: too many values to unpack (expected 2)
 ```
+
+## DAKLE PRI UNPACKING-U MORAS DA UNPACKK-UJES SVEL AKO TI NESTO NE TREBA, MOZES, KAO KONVENCIJU DA KORISTIS VARIJABLE DEKLARISANE SA UNDERSCORE-OM
+
+```py
+# IMAM TUPLE
+>>> jack = "Beans", 8, "Lava i Floor", "Kate"
+# UNPACK-UJEM GA I KORISTIM UNDERSCORES
+>>> vegetable, distance, _, __ = jack
+>>> vegetable
+'Beans'
+>>> distance
+8
+# I OVE UNDERSORE NECU NIGDE UPOTREBLJAVATI
+>>> _
+'Lava i Floor'
+>>> __
+'Kate'
+>>> 
+```
