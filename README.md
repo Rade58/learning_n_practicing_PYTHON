@@ -11,6 +11,9 @@
 >>> my_list.sort()
 >>> my_list
 [2, 6, 8, 81]
+
+# NIJE KREIRANA NOVA LISTA KOJA JE KOPIJA STARE SAMO SORTED, VEC JE DAKLE
+# LISTA SORTED, STO MOZES I SAM PRIMETITI
 ```
 
 KAO STO VIDIS SORT-OVAO SAM LIST
@@ -64,4 +67,13 @@ sort(self, /, *, key=None, reverse=False)
 
 ```
 
+## MOGUC JE SORTING U REVERSE STRANU
 
+```py
+>>> cool_list = [8, 2, 1, 12, 4]
+>>> cool_list.sort(reverse = True)
+>>> cool_list
+[12, 8, 4, 2, 1]
+```
+
+EVO KAO STO VIDIS SAMO JER SAM ZADA O KEYBOARD ARGUMENT, JA SAM USPEO DA SORT-UJEM LIST REVERSELY
