@@ -1,3 +1,18 @@
 # REMOVING ITEMS FROM A LIST
 
+POSTOJI I NEKOLIKO NACINA DA SE REMOVE-UJE ITEM FROM A LIST
+
+## MOGUCE JE KORISTITI `list.remove`
+
+OVO UKLANJA FIRST OCCURANCE OF THE VALUE
+
+```py
+>>> my_list = [1,2,3,4,5,6,7,8]
+>>> my_list.remove(4)
+>>> my_list
+[1, 2, 3, 5, 6, 7, 8]
+```
+
+EVO UKLONIO SAM BROJ 4
+
 
