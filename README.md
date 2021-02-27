@@ -39,7 +39,6 @@ MORAS USTVARI RESTRUKTURIRATI SVE,
 
 INACE CES, (U NJABOLJEM SLUCAJU) DOBITI SAMO NOVU VARIJABLU KOJA CE POINT-OVATI NA SAME TUPLE
 
-
 ```py
 >>> resort = ("Atlatic", "Spain")
 # HTEO SAM DA UPACK-UJEM SAMO PRVI ITEM TUPLE-A
@@ -52,4 +51,11 @@ INACE CES, (U NJABOLJEM SLUCAJU) DOBITI SAMO NOVU VARIJABLU KOJA CE POINT-OVATI 
 
 A SIGURNO CES DOBITI ERROR, AKO OVAKO NESTO URADIS
 
-
+```py
+>>> little_peep = ("BMW", 480, "blonde", "Vegas")
+# ZELIM DAKLE DA UNPACK-UJEM DVA PRVA ITEMA
+>>> vehicle, acres = little_peep
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: too many values to unpack (expected 2)
+```
