@@ -87,3 +87,13 @@ KAO STO VIDIS TO JE 4, ONO JE OD POZADI TRECI CLAN (I OPET TI NAPOMINJEM DA SE O
 
 I JA SAM GA PROMANIO NA 288
 
+## OPET TI NAPOMINJEM DA AKO PROBAS DA SSIGN-UJES NOVI CLAN DO NEPOSTOJECEG INDEKSA DA CES IMATI INDEX ERROR
+
+```py
+>>> foo = [2]
+>>> foo[1] = 6
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list assignment index out of range
+```
+
