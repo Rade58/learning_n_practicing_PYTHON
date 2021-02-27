@@ -18,3 +18,13 @@ EVO UKLONIO SAM BROJ 4, I TO SAMO FIRST OCCURANCE OF 4
 **ISTO TAKO VIDIM DA SA OVOM METODOM NIJE MOGUCE UKLONITI SECOND OCCURANCE AKO BI ON POSTOJAO**
 
 NIJE MOGUCE, KAO SA DRUGIM METODAMA DA SE ZDAJE RANGE ODAKLE SE SERCH-UJE ILI DA SE KRENE OD NAZAD
+
+## AKO SA `list.remove` POKUSAS DA UKLONIS ONO CEGA NEMA, RAISE-OVACE SE ERROR
+
+```py
+>>> my_list = [2,8]
+>>> my_list.remove(26)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+```
