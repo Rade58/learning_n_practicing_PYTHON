@@ -94,4 +94,33 @@ EVO POGLEDAJ
 
 SADA IMAM TUPLE-OVE SA, PO JEDNIM CLANOM
 
+# ZA NEKU PRAKTICNU PRIMENU, TUPLE BI BIO DOBAR ZA REPREZENTACIJU TABELA, ODNOSNO SPREADSHEET-OVA
+
+NA PRIMER PREDSTAVIO SAM UCENIKA U SPREADSHEET-U UZ POMOC TUPLE-A
+
+ON IMA IME , GODISTE, OMILJENI PREDMET I GDP (PROSECNU OCENU)
+
+```py
+>>> student = ("Tedi De Bergeran", 28, "Pseudoscience", 2.8)
+```
+
+TI I DALJE MOSES ACCESS-OVATI CLANOVE PO INDEKSU, BAS KAO I KOD LISTE
+
+```py
+>>> student[2]
+'Pseudoscience'
+>>> 
+```
+
+# ONI SU IMMUTABLE, I POKUSAJ MENJANA ITEMA BI TREBALO DA IZAOVE ERROR
+
+```py
+>>> student[0] = "Coward Jessy Joice"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+```
+
+DAKLE TRACEBACK TYPE ERROR TI JE REKAO DA TUPLE-OVI NE SUPORT-UJU ITEM ASSIGNMENT
+
 
