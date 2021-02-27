@@ -157,3 +157,24 @@ IndexError: list index out of range
 >>> some_list
 [8, 2, 3, 8]
 ```
+
+# PAR RECI O FORMATINGU LISTE U REPLU
+
+NAIME TI MOZES PRITISKATI ENTER KADA PISES LISTU BEZ PROBLEMA I MOZES PRISTISNUTI ENTER DA IDES U NOVI RED
+
+NA POCETKU KUCAS `[` I UDARIS ENTER
+
+```py
+>>> moja_lista = [
+... 2,
+... 4,
+... 5,
+... 6
+... ,
+... 8
+... ]
+>>> moja_lista
+[2, 4, 5, 6, 8]
+```
+
+KAO STO VIDIS ZATVARAS SA `]`
