@@ -182,11 +182,23 @@ KAO STO VIDIS ZATVARAS SA `]`
 # DOZVOLJENO JE DA IMAS ZAREZ (COMMA) I KOD POSLEDNJEG CLANA LISTE; TO NECE IZAZVATI NIKAKV ERROR
 
 ```py
->>> list_one = [1,2,3,]
+>>> list_one = [1,2,3,] # EVO GA ZAREZ NA KRAJU
 >>> list_one
 [1, 2, 3]
 ```
 
 **ISTO VAZI ZA JAVASCRIPT; ALI SECAS SE DA U JSON-U, TO NIJE DOZVOLJENO** (SAMO SE PRISECAM)
+
+# GOTCHAS AKO ZABORAVIS COMMA-U NEGDE U LISTI
+
+```py
+>>> list_two = [1 , 2 8, 9]
+  File "<stdin>", line 1
+    list_two = [1 , 2 8, 9]
+                      ^
+SyntaxError: invalid syntax
+```
+
+ZABORAVIO SAM ZAREZ IZMEDJU 2 I 8; ODNOSNO TU JE OSTALO PRAZNO MESTO, I ZATO SE DESIO SYNTAX ERROR
 
 
