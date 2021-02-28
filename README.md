@@ -132,4 +132,13 @@ TypeError: unhashable type: 'list'
 
 DOBRO JE STO METODA set PRIHVATA I `[]`
 
+A MOZES I DEDUPE-OVATI I TUPLE
 
+```py
+>>> foo = ("Bonie", 8, 6, "Bonie", "Kake")
+>>> bar = set(foo)
+>>> bar
+{8, 'Kake', 'Bonie', 6}
+```
+
+PREDPOSTAVLJAM DA TO MOZES RADITI I SA DRUGIM TYPE-OVIM
