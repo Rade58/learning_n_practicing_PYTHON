@@ -52,3 +52,18 @@ I `list` TYPE IMA ISTU METODU I ONA ISTO THROW-UJE ERROR KAD POKUSAS NESTO DA UK
 >>> set1
 {1, 6, 8, 'tomato', 'olive'}
 ```
+
+## GOTTCHA SA `update` METODOM JE TO STO ONA OCEKUJE SEKVENCU
+
+```py
+>>> set1
+# UPDATE-OVAO SAM BEZ DDAVANJA BILO KAKVIH ZAGRADA BILO DA SU TO [] ILI {}
+>>> set1.update("lemon", "lime")
+# VIDIS STA SI DOBIO, STRING-OVI KOJE SI PROSLEDIO SU ISPREKIDANI NA KARAKTERE
+>>> set1
+{1, 6, 'l', 8, 'e', 'tomato', 'm', 'i', 'olive', 'n', 'o'}
+# A OVDE JE SVE U REDI IAKO SAM KAO ARGUMENT ZADAO LISTU
+>>> set1.update(["lemon", "lime"])
+>>> set1
+{1, 6, 'l', 8, 'e', 'tomato', 'lemon', 'm', 'i', 'olive', 'n', 'o', 'lime'}
+```
