@@ -68,9 +68,14 @@ MOZDA NIJE TEMA DA OVO SADA KEM, ALI POSTOJE I DRUGI REPLOVI SA SYNTAX HIGHLIGHT
 >>> foo = {"Kevin", "Zoro", "Kevin"}
 >>> foo
 {'Zoro', 'Kevin'}
->>> 
 ```
 
+# MOZES PROVERITI LENGTH TVOG SET-A
+
+```py
+>>> len(foo)
+2
+```
 
 
 
