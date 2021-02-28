@@ -77,5 +77,13 @@ MOZDA NIJE TEMA DA OVO SADA KEM, ALI POSTOJE I DRUGI REPLOVI SA SYNTAX HIGHLIGHT
 2
 ```
 
+# SET-OVI NE MOGU CONTAIN-OVATI MUTABLES
 
+```py
+>>> bar = {1,2, [1,2]}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+```
+KAO STO VIDIS DOBIO SAM ERROR JER SAM POKUSAO DA DODAM LIST, A TO JE MUTABLE
 
