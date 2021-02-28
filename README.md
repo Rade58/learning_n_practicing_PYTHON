@@ -118,3 +118,14 @@ Traceback (most recent call last):
 TypeError: unhashable type: 'list'
 ```
 
+**DAKLE OPET NAPOMINJEM DA SET MOZE SAMO HOLD-OVATI IMMUTABLE TYPE**
+
+# SET-OVI SE MOGU KORISTITI KAU UTILITY AKO ZELIS DA DEDUP-UJES (DEDUPLICATE-UJEES) LISTU
+
+```py
+>>> my_list = [1,2,2,4,4,4,4,5,5,8]
+>>> deduped = set(my_list)
+>>> deduped
+{1, 2, 4, 5, 8}
+>>> 
+```
