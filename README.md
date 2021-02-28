@@ -1,6 +1,6 @@
 # DODATNO
 
-SAM ODA TI KAZEM DA SET IMA JOS MNOSTVO METODA KAO STO SU `issubset` I `issuperset`
+SAMO DA TI KAZEM DA SET IMA JOS MNOSTVO METODA KAO STO SU `issubset` I `issuperset`
 
 ```py
 >>> set_1 = {1,2,3,4}
