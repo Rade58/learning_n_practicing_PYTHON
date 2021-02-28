@@ -83,4 +83,19 @@ SAMO ZELIM DA KORISTIM vegetable I distance, A ZA UNDERSCORE VARIJABLE ME BAS BR
 
 # MOZES I RETURN-OVATI TUPLES FROM FUNCTIONS, I PRI POZIVU RADITI UNPACKING
 
+EVO POKAZACU PUTEM PRIMERA
 
+```py
+>>> def foo():
+...     return ("Kevin", 34, "driver")
+... 
+# EVO, UJEDNO POZIVAM FUNKCIJU I NJENU POVRATNU VREDNOST UNPACK-UJEM
+>>> name, age, job = foo()
+>>> name
+'Kevin'
+>>> age
+34
+>>> job
+'driver'
+>>> 
+```
