@@ -154,3 +154,12 @@ TO ZNACI I KADA IH PRINT-UJES DA ITEMI U NJIAM NECE BITI DISPLAYED PO OREDERU KO
 ```
 
 AKAO STO VIDIS POTPUNO JE NEKI RANDOM ORDER
+
+AKO POKUSAS DA UPOTREBIS INDEKS, DOBICES TYPE ERROR, JER SET NEMA INDEX-E
+
+```py
+>>> my_set[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+```
