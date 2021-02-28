@@ -38,3 +38,5 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'blah'
 ```
+
+I `list` TYPE IMA ISTU METODU I ONA ISTO THROW-UJE ERROR KAD POKUSAS NESTO DA UKLONIS
