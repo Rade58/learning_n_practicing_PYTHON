@@ -1,5 +1,7 @@
 # AKO ZELIS DATA STRUCTURE, KOJI IMA OSOBINE SETA A DA BUDE IMMUTABLE, MOZES KORISTITI FROZEN SET
 
+ON JE DAKLE IMMUTAABLE
+
 ```py
 >>> zamrznuti_set = frozenset({"Sljiva", "Evri", "Audi", "Turbo Folk"})
 >>> zamrznuti_set
