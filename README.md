@@ -1,2 +1,7 @@
 # COMBINING COMPARING ONTRASTING
 
+IMAS OVDE DOBAR CHEATSHEET, KOJI SE TICE OPERACIJA ZA POMENUTE STVARI
+
+<https://www.learnpython.dev/02-introduction-to-python/080-advanced-datatypes/50-sets/#set-operations>
+
+DAKLE U PITANJU SU **OPERACIJE ZA COMPARING ITEMA DVA SET-A**
