@@ -3,5 +3,8 @@
 ## `add` METODA
 
 ```py
-
+>>> colors = {"blanchedalmond", "green", "purple"}
+>>> colors.add("tomato")
+>>> colors
+{'green', 'purple', 'blanchedalmond', 'tomato'}
 ```
