@@ -87,7 +87,7 @@ EVO POKAZACU PUTEM PRIMERA
 
 ```py
 >>> def foo():
-...     return ("Kevin", 34, "driver")
+...     return "Kevin", 34, "driver"
 ... 
 # EVO, UJEDNO POZIVAM FUNKCIJU I NJENU POVRATNU VREDNOST UNPACK-UJEM
 >>> name, age, job = foo()
