@@ -39,4 +39,16 @@ Traceback (most recent call last):
 KeyError: 'blah'
 ```
 
+DOBIO SI KEY ERROR
+
 I `list` TYPE IMA ISTU METODU I ONA ISTO THROW-UJE ERROR KAD POKUSAS NESTO DA UKLONIS
+
+# UPDATING ITEMA SA `update` METODOM JE SLICNO KAO I CONCATANATION LISTI, KOJU SI RADIO SA `extend`
+
+```py
+>>> set1 = {1,8,6}
+>>> set2 = {"tomato", "olive"}
+>>> set1.update(set2)
+>>> set1
+{1, 6, 8, 'tomato', 'olive'}
+```
