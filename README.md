@@ -129,3 +129,7 @@ TypeError: unhashable type: 'list'
 {1, 2, 4, 5, 8}
 >>> 
 ```
+
+DOBRO JE STO METODA set PRIHVATA I `[]`
+
+
