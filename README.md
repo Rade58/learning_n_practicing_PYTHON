@@ -1,75 +1,15 @@
-# COMBINING COMPARING ONTRASTING
+# DODATNO
 
-IMAS OVDE DOBAR CHEATSHEET, KOJI SE TICE OPERACIJA ZA POMENUTE STVARI
-
-<https://www.learnpython.dev/02-introduction-to-python/080-advanced-datatypes/50-sets/#set-operations>
-
-DAKLE U PITANJU SU **OPERACIJE ZA COMPARING ITEMA DVA SET-A**
-
-POSTOJI VISE OPERACIJA ALI OVO SU MOZDA NAJKORISNIJE
-
-A TE OPERACIJE SU TAKODJE WRAPPED U METODE, STO ZNACI DA SE MOGU UPOTREBITI NA DVA NACINA
-
-# UNION: `|` ILI METODA `set.union`
+SAM ODA TI KAZEM DA SET IMA JOS MNOSTVO METODA KAO STO SU `issubset` I `issuperset`
 
 ```py
 >>> set_1 = {1,2,3,4}
->>> set_2 = {3,4,5,6}
-# SA OPERATOROM
->>> set_3 = set_1 | set_2
->>> set_3
-{1, 2, 3, 4, 5, 6}
-# SA METODOM
->>> set_4 = set_1.union(set_2)
->>> set_4
-{1, 2, 3, 4, 5, 6}
->>> 
-```
-EVO VIDIS STA JE USTVARI UNIJA: **SVI RALICITI ITEMI SE KOMBINUJU, A DUPLIKATA KAO STO VIDIS, ISTO NEMA, JER NI NE MOGU POSTOJATI U SET-U**
-
-# INTERSECTION: `&` ILI METODA `set.intersection`
-
-OVO CE OUTPUT-OVATI NOVI SET SA SVIM ITEMIMA, KOJI SU ITEMI KOJI SU ZAJEDNICKI ZA DVA SET-A
-
-```py
->>> set_1 = {1,2,3,4}
->>> set_2 = {3,4,5,6}
->>> set_3 = set_1 & set_2
->>> set_3
-{3, 4}
->>> set_4 = set_1.intersection(set_2)
->>> set_4
-{3, 4}
+>>> set_2 = {3,4}
+>>> set_2.issubset(set_1)
+True
+>>> set_1.issuperset(set_2)
+True
 >>> 
 ```
 
-# DIFFERENCE: `^` ILI METODA `set.difference`
-
-**KOD OVE OPERACIJE POSTOJI RAZLIKA IZMEDJU KORISCENJA OPERATORA I KORISCENJA METODE**
-
-OPERATOR CE OUTPUT-OVATI SAMO ONE ITEME, PO KOJIMA SE DVA SETA RAZLIKUJU; **I TO I ONE ITEME IZ SETA JEDAN, KOJE NE POSTOJE U SETU DVA; I ONE ITEME IZ U SETA DVA, KOJI NE POSTOJE U SETU JEDAN**
-
-```py
->>> set_1 = {1,2,3,4}
->>> set_2 = {3,4,5,6}
->>> set_3 = set_1 ^ set_2
->>> set_3
-{1, 2, 5, 6}
-```
-
-**MEDJUTIM, KADA KORISTIS METODU `set.difference`, BICE OUTPUTED SAMO ITEMI SETA 1 KOJI SE RAZLIKUJU OD SETA 2; BEZ OTHER WAY AROUND**
-
-```py
->>> set_4 = set_1.difference(set_2)
->>> set_4
-{1, 2} # KAO STO VIDIS NEMA ITEMA SETA 2 KOJI SE RAZLIKUJU OD ONIH IZ SETA 1
-```
-
-JEDINO JA MOGU POZVATI I OTHER WAY AROUND
-
-```py
->>> set_5 = set_2.difference(set_1)
->>> set_5
-{5, 6}
->>> 
-```
+POGLEDAJ OSTALE METODE KADA BUDES IMAO VREMENA
