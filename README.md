@@ -212,5 +212,5 @@ KeyError: 'goat'
 
 ## `keys` `values` `items`
 
-OVO SU KORISNE METODE (POGLEDAJ IH OVDE: <https://github.com/Rade58/learning_n_practicing_PYTHON/tree/7_3____keys____values____items#keys-values-items> )
+OVO SU KORISNE METODE (POGLEDAJ O NJIMA OVDE: <https://github.com/Rade58/learning_n_practicing_PYTHON/tree/7_3____keys____values____items#keys-values-items> )
 
