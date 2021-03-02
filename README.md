@@ -13,5 +13,17 @@
 >>> 
 ```
 
+## UPDATING
 
+```py
+>>> foo[1] = "Nick"
+>>> foo
+{1: 'Nick', 'amount': 8, 8: 'Stavros', 'Kevin': 'bafoon'}
+```
+
+## REMOVING
+
+```py
+
+```
 
