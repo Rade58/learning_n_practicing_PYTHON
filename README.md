@@ -165,6 +165,18 @@ ZATO TUPLE SA JEDNIM CLANOM PRAVIM SA TRAILING COMMA
 >>> 
 ```
 
+## TUPLE-OVI SU ITERABLE
+
+```py
+>>> my_tuple = ("Sam", 8, True)
+>>> my_tuple[0]
+'Sam'
+>>> my_tuple[1]
+8
+>>> my_tuple[2]
+True
+```
+
 # DA SE SADA POZABAVIM SA `dictionary`
 
 ```py
