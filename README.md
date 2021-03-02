@@ -51,7 +51,7 @@ ALI KAO STO VIDIS, DOBAR JE ZA IGRANJE U REPLU, U CILJU PROVERE DA LI JE NESTO T
 False
 ```
 
-SAVAKO DRUGI NUMBER U PYTHON-U JE TRUTHY, BIO TO `int` ILI `float`
+SAVAKO DRUGI NUMBER U PYTHON-U JE TRUTHY, BIO TO `int` ILI `float`, I BIO TO POZITIVAN ILI NEGATIVAN BROJ
 
 ```py
 >>> my_num = 0.21
@@ -59,4 +59,49 @@ SAVAKO DRUGI NUMBER U PYTHON-U JE TRUTHY, BIO TO `int` ILI `float`
 <class 'float'>
 >>> bool(my_num)
 True
+
+>>> bool(-2)
+True
 ```
+
+**MISLIM DA JE I U JAVASCRIPT-U ISTA SITUACIJA; I TMO SU NEGATIVNI BROJEVI ISTO TRUTHY (MADA NA OVO NISAM NI MNOGO OBRACAO PAZNJU)**
+
+### `list` --> []
+
+```py
+>>> bool([])
+False
+```
+
+DAKLE EMPTY LIST JE FALSY
+
+### `dict` --> {}
+
+```py
+>>> bool({})
+False
+>>> 
+```
+
+DAKLE EMPTY DICTIONARY JE FALSY
+
+### `tuple` --> ()
+
+```py
+>>> bool(())
+False
+```
+
+DAKLE EMPTY TUPLE JE FALSY
+
+### `set` --> `set()`
+
+```py
+>>> bool(set({}))
+False
+>>> bool(set())
+False
+>>> 
+```
+
+DAKLE EMPTY SET JE FALSY
