@@ -202,7 +202,7 @@ Traceback (most recent call last):
 KeyError: 'goat'
 
 # DA SE OSIGURAM DA NE DOBIJEM ERROR
->>> my_dict.get("goat") # NISTA NE VRACA
+>>> my_dict.get("goat") # NISTA NE VRACA, ALI BAR NEMAS ERROR
 
 # ILI DA SE OSIGURAM DA RETURN-UJEM DEFAULT, KAD NEMA NICEGA
 
