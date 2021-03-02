@@ -38,3 +38,25 @@ True
 
 ALI KAO STO VIDIS, DOBAR JE ZA IGRANJE U REPLU, U CILJU PROVERE DA LI JE NESTO TRUTHY ILI NE
 
+## IMAS OVDE TRUTHINESS CHEATSHEET
+
+<>
+
+## DA POGLEDAM JA KOJE SU TO FALSY VREDNOSTI
+
+### `int` --> 0
+
+```py
+>>> bool(0)
+False
+```
+
+SAVAKO DRUGI NUMBER U PYTHON-U JE TRUTHY, BIO TO `int` ILI `float`
+
+```py
+>>> my_num = 0.21
+>>> type(my_num)
+<class 'float'>
+>>> bool(my_num)
+True
+```
