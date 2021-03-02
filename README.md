@@ -43,4 +43,15 @@ True
 True
 ```
 
+## DA SE PODSETINM SORTINGA IN PLACE
+
+```py
+>>> my_list = [2, 1, 16, 8, 4]
+>>> my_list.sort(reverse = True)
+>>> my_list
+[16, 8, 4, 2, 1]
+```
+
+
+
 
