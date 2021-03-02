@@ -32,6 +32,13 @@ EVO OVO TI JE EMPTY DICTIONARY
 <class 'dict'>
 ```
 
+POSTOJI I DRUGI NACIN, A TO JE KORISCENJE `dict` KLASE
 
-
+```py
+>>> my_dict = dict()
+>>> my_dict
+{}
+>>> type(my_dict)
+<class 'dict'>
+```
 
