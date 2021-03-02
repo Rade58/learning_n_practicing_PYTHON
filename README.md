@@ -1,7 +1,20 @@
-# ORDER INSIDE DICTIONARY
+# ORDER INSIDE DICTIONARY, JE SORT OF PERSERVED
 
+ITEMI, ODNONO KEY/VALUE PAIRS SU SORTED PO ORDERU UNOSA, ODNOSNO ORDERU INSERT-A
 
+EVO NA STA MISLIM
 
+```py
+>>> foo = {"z": "Kevin", "a": 8}
+>>> foo
+# VIDIS DA JE ORDER ONAKAV KAKO SAM ITEME LAY-OVAO PRI DEKLARISANJU
+{'z': 'Kevin', 'a': 8}
+```
 
+SADA KADA UNESEM NOVI ITEM, ON BI TREBALO DA BUDE POSLEDNJI
 
-
+```py
+>>> foo["place"] = "Maldives"
+>>> foo
+{'z': 'Kevin', 'a': 8, 'place': 'Maldives'}
+```
