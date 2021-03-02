@@ -24,6 +24,13 @@ SADA MOGU DA SA remove UKLONIM ,NEKI ITEM IZ NEKE LISTE, ALI SADA UKLANJAS PREME
 ['h', 'e', 'l', 'o', '!']
 ```
 
+PA MOGU DA SA `insert` DA UNESEM NESTO ISPRED NEKOG INDEKSA
 
+```py
+>>> foo.insert(2, "l")
+>>> foo
+['h', 'e', 'l', 'l', 'o', '!']
+
+```
 
 
