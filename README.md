@@ -1,4 +1,4 @@
-# ADDING AND REMOVING FROM DICTIONARY
+# ADDING AND REMOVING AND UPDATING FROM DICTIONARY
 
 ***
 
@@ -23,7 +23,7 @@ digresija:
 >>> 
 ```
 
-## UPDATING VEC POSTOJECEG PARA
+## UPDATING
 
 MOGUCE JE OVAKO
 
@@ -53,6 +53,7 @@ SADA CU SA METODOM POKUSATI DA MENJAM NESTO STO NE POSTOJI U MOM DICTIONARY-JU
 ```py
 >>> bar.update({"car": "Ford"})
 >>> bar
+# KAO STO VIDIS POPUNO NOVI KEY VALUE PAIR JE DODAT
 {'person': 'Zbicnjek', 'amount': 8, 'animal': 'Elephant', 'car': 'Ford'}
 >>> 
 ```
@@ -63,7 +64,14 @@ USPELO JE I TO
 
 ## REMOVING
 
-```py
+MOGU TO URADITI SA `pop` METODOM, CIJA POVRATNA VREDNOST JESTE VALUE REMOVED KEY/VALUE PAIR-A
 
+```py
+>>> baz = {"someone": "Nick", "amount": 8, "podcast": "some show"}
+>>> baz
+{'someone': 'Nick', 'amount': 8, 'podcast': 'some show'}
+>>> baz.pop('someone')
+'Nick'
 ```
+
 
