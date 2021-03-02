@@ -177,6 +177,16 @@ ZATO TUPLE SA JEDNIM CLANOM PRAVIM SA TRAILING COMMA
 True
 ```
 
+ALI SU IMMUTABLE, KAO STO SAM TI VEC I REKAO
+
+```py
+>>> my_tuple[2] = "town"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> 
+```
+
 # DA SE SADA POZABAVIM SA `dictionary`
 
 ```py
