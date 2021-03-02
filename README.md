@@ -32,6 +32,15 @@ PA MOGU DA SA `insert` DA UNESEM NESTO ISPRED NEKOG INDEKSA
 ['h', 'e', 'l', 'l', 'o', '!']
 ```
 
+## DA SE PODSETIM `in`
 
+```py
+>>> foo = ['h', 'a', 'me']
+>>> bar = {"tool": "stuff"}
+>>> "a" in foo
+True
+>>> "tool" in bar
+True
+```
 
 
