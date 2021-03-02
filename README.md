@@ -110,5 +110,16 @@ KORISTIM `[]` ZA ACCESSING
 
 PA BROJ JE VALIDAN KEY, I DOBICES VALUE ASSOCIATED WITH THAT NUMBER KEY
 
-A AKO NEMA ZADATOG KLJUCA, DOBICES **None**
+A AKO NEMA ZADATOG KLJUCA, DOBICES **KEY ERROR**
+
+```py
+>>> my_dict = {8: "Stavros"}
+>>> my_dict[8]
+'Stavros'
+>>> my_dict[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 1
+```
+
 
