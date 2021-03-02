@@ -90,6 +90,7 @@ NAPRAVICU SADA PRAZAN SET PA CU MU NESTO DODATI
 ```py
 >>> my_set = set()
 >>> my_set.add("Stavros")
+>>> my_set.add("Stavros") # NEMA DUPLICATE-OVA ALI NE THROW-UJE ERROR AKO POKUSAS DA GA DODAS
 >>> my_set
 {'Stavros'}
 ```
