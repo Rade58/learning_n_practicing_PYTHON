@@ -34,17 +34,6 @@ PA MOGU DA SA `insert` DA UNESEM NESTO ISPRED NEKOG INDEKSA
 ['h', 'e', 'l', 'l', 'o', '!']
 ```
 
-## DA SE PODSETIM `in`
-
-```py
->>> foo = ['h', 'a', 'me']
->>> bar = {"tool": "stuff"}
->>> "a" in foo
-True
->>> "tool" in bar
-True
-```
-
 ## DA SE PODSETINM SORTINGA IN PLACE
 
 ```py
@@ -77,6 +66,21 @@ ILI SA `sorted` GLOBALOM
 >>> 
 ```
 
+# DA SE PODSETIM `in`; ON FUKCIONISE I ZA SET I ZA LIST I ZA DICTIONARY
+
+```py
+>>> foo = ['h', 'a', 'me']
+>>> bar = {"tool": "stuff"}
+>>> my_set = {'Stavros', 'Adam', 'Nick'}
+
+>>> "a" in foo
+True
+>>> "tool" in bar
+True
+>>> "Adam" in my_set
+True
+```
+
 # SADA CU DA SE BAVIM SA `set`
 
 OPET TE PODSECAM DA ZA KREIRANJE PRAZNOG SETA MORAS KORISTITI METODU, JER AKO KORISTIS BRACKETS NAPRAVICES PRAZAN DICTIONARY
@@ -89,5 +93,19 @@ NAPRAVICU SADA PRAZAN SET PA CU MU NESTO DODATI
 >>> my_set
 {'Stavros'}
 ```
+
+```py
+>>> my_set.add("Nick")
+>>> my_set.add("Adam")
+>>> my_set
+{'Stavros', 'Adam', 'Nick'}
+```
+
+SADA CU NESTO UKLONITI IZ TOG SET-A
+
+
+
+
+
 
 
