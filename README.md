@@ -1,5 +1,15 @@
 # ADDING AND REMOVING FROM DICTIONARY
 
+***
+
+digresija:
+
+**KLJUCEVE DICTIONARY-JA, MISLIM SAMO NA KLJUCEVE, TREBA POSMATRATI KAO SET**
+
+**NEMA DUPLIKATA U KLJUCEVIMA**
+
+***
+
 ## ADDING
 
 ```py
@@ -13,9 +23,7 @@
 >>> 
 ```
 
-## UPDATING
-
-**KLJUCEVE DICTIONARY-JA, MISLIM SAMO NA KLJUCEVE, TREBA POSMATRATI KAO SET**
+## UPDATING VEC POSTOJECEG PARA
 
 MOGUCE JE OVAKO
 
@@ -25,7 +33,31 @@ MOGUCE JE OVAKO
 {1: 'Nick', 'amount': 8, 8: 'Stavros', 'Kevin': 'bafoon'}
 ```
 
-ILI KORISCENJEM `update` METODE
+ILI KORISCENJEM `update` METODE, KOJOJ SE KAO ARGUMENT DODAJE OPET DICTIONARY; SA SVIM ONIM STA ZELIS DA MENJAS
+
+EVO VIDI
+
+```py
+>>> bar = {"person": "Nick", "amount": 8, "animal": "Horse"}
+>>> bar
+{'person': 'Nick', 'amount': 8, 'animal': 'Horse'}
+# EVO DVA PROPERTIJA MENJAM
+>>> bar.update({"person": "Zbicnjek", "animal": "Elephant"})
+# I ZISTA SU PROMENJENI
+>>> bar
+{'person': 'Zbicnjek', 'amount': 8, 'animal': 'Elephant'}
+```
+
+SADA CU SA METODOM POKUSATI DA MENJAM NESTO STO NE POSTOJI U MOM DICTIONARY-JU
+
+```py
+>>> bar.update({"car": "Ford"})
+>>> bar
+{'person': 'Zbicnjek', 'amount': 8, 'animal': 'Elephant', 'car': 'Ford'}
+>>> 
+```
+
+USPELO JE I TO
 
 ## REMOVING
 
