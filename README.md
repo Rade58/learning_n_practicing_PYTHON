@@ -46,6 +46,21 @@ POSTOJI I DRUGI NACIN, A TO JE KORISCENJE `dict` KLASE
 
 # ZA DICTIONARY SU CURLY BRACKETS (`{}`) VAZNE; DOK SU ZA SET ONE BILE TAKORECI OPCIONE
 
+SADA CU NAPRAVITI NEKOLIKO DICTIONARY-JA
 
+```py
+>>> {"kevin": 8, "John": 12}
+{'kevin': 8, 'John': 12}
+```
+
+```py
+>>> {1: "Kevin", 2: "John"}
+{1: 'Kevin', 2: 'John'}
+```
+
+```py
+>>> {8: 8, 6: 6}
+{8: 8, 6: 6}
+```
 
 
