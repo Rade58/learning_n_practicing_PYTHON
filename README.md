@@ -63,4 +63,20 @@ SADA CU NAPRAVITI NEKOLIKO DICTIONARY-JA
 {8: 8, 6: 6}
 ```
 
+```py
+>>> {1: [], "Stavros": ("john", "yhree", "oliver")}
+{1: [], 'Stavros': ('john', 'yhree', 'oliver')}
+```
 
+# ZNAS DA CE DODCI DO ERROR-A ALI POKUSAJ DA STAVIS MUTABLE TYPE KAO KEY
+
+CISTO DA VIDIM KAKAV CE ERROR BITI THROWN
+
+```py
+>>> {{"Kevin"}: 8}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'set'
+```
+
+DOBIO SI TYPE ERROR JER SI KORISTIO SET KAO KEY
