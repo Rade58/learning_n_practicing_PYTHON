@@ -105,3 +105,16 @@ False
 ```
 
 DAKLE EMPTY SET JE FALSY
+
+# AKO OVI CONTAINER TYPE-OVI IMAJU PA BAR 1 ITEM, ONE SU EVALUATED TO TRUTHY
+
+```py
+>>> bool([8])
+True
+>>> bool({8: "eight"})
+True
+>>> bool((1,))
+True
+>>> bool({1})
+True
+```
