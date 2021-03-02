@@ -1,29 +1,11 @@
-# ADDING AND REMOVING FROM DICTIONARY
-
-## ADDING
+# `in` KORISTIM A POTRVRDIM DA LI POSTOJI KLJUC U DICTIONARY-JU
 
 ```py
->>> foo = {1: "Mike", "amount": 8}
-# STAVLJAM
->>> foo[8] = "Stavros"
->>> foo["Kevin"] = "bafoon"
-# DA VIDIM DA LI JE TU ONO STA SAM STAVIO
->>> foo
-{1: 'Mike', 'amount': 8, 8: 'Stavros', 'Kevin': 'bafoon'}
->>> 
+>>> foo = {8: "Mike", "amount": 28}
+>>> 8 in foo
+True
+>>> "neki key" in foo
+False
 ```
 
-## UPDATING
-
-```py
->>> foo[1] = "Nick"
->>> foo
-{1: 'Nick', 'amount': 8, 8: 'Stavros', 'Kevin': 'bafoon'}
-```
-
-## REMOVING
-
-```py
-
-```
-
+AKO SE SECCAS ISTO MOZES SA OVIM OPERATOROM DA PROVERAVAS DA I ITEMI POSTEJE U SET-OVIMA ILI LISTAMA
