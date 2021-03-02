@@ -137,3 +137,30 @@ POSTOJE I METODE SA IMANIMA KAO U NASLOVU
 
 S TIM STO `difference` METODA IMA ONAJ QUIRK PO KOJEM SAMO VACA DIFFERENCE ZA JEDAN
 
+# DA SE SADA PODSETIM TUPLE-OVA
+
+KADA PRAVIS TUPLE COMMA JE VAZN, A () SU OPCIONA STVAR
+
+ZATO TUPLE SA JEDNIM CLANOM PRAVIM SA TRAILING COMMA
+
+```py
+>>> my_tup = 1, # DA NISI STAVIO COMM, OVO BI BIO BROJ
+>>> type(my_tup)
+<class 'tuple'>
+```
+
+**TUPLE-OVI SU IMMUTABLES**
+
+A DOBRI SU ZA UNPACKING
+
+```py
+>>> person = ("Stavros", 24, "comedian")
+>>> name, age, job = person
+>>> name
+'Stavros'
+>>> age
+24
+>>> job
+'comedian'
+>>> 
+```
