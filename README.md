@@ -52,6 +52,25 @@ True
 [16, 8, 4, 2, 1]
 ```
 
+## A OVO JE KRIRANJE SORTED KOPIJE BEZ MUTATINGA ORIGINAL LISTE
 
+MOGU TO URAITI NA KOMPLIKOVANIJI NACIN KRIRANJEM POTPUNO NOVE LISTE
 
+```py
+>>> other_list = []
+>>> other_list.extend(my_list)
+>>> other_list
+[16, 8, 4, 2, 1]
+>>> other_list.sort()
+>>> other_list
+[1, 2, 4, 8, 16] 
+```
 
+ILI SA `sorted` GLOBALOM
+
+```py
+>>> neu_list = sorted( other_list, reverse = True)
+>>> neu_list
+[16, 8, 4, 2, 1]
+>>> 
+```
