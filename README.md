@@ -116,7 +116,24 @@ Traceback (most recent call last):
 KeyError: 'John'
 ```
 
+## `union` `intersection` `difference` OF A SET
 
+```py
+>>> my_set = {1,2,3,4}
+>>> my_other_set = {3,4,5,6,7,8}
+>>> union_set = my_set | my_other_set
+>>> union_set
+{1, 2, 3, 4, 5, 6, 7, 8}
+>>> intersection_set = my_set & my_other_set 
+>>> intersection_set
+{3, 4}
+>>> difference_set = my_set ^ my_other_set
+>>> difference_set
+{1, 2, 5, 6, 7, 8}
+>>> 
+```
 
+POSTOJE I METODE SA IMANIMA KAO U NASLOVU
 
+S TIM STO `difference` METODA IMA ONAJ QUIRK PO KOJEM SAMO VACA DIFFERENCE ZA JEDAN
 
