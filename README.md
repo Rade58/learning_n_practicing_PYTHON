@@ -15,11 +15,17 @@
 
 ## UPDATING
 
+**KLJUCEVE DICTIONARY-JA, MISLIM SAMO NA KLJUCEVE, TREBA POSMATRATI KAO SET**
+
+MOGUCE JE OVAKO
+
 ```py
 >>> foo[1] = "Nick"
 >>> foo
 {1: 'Nick', 'amount': 8, 8: 'Stavros', 'Kevin': 'bafoon'}
 ```
+
+ILI KORISCENJEM `update` METODE
 
 ## REMOVING
 
