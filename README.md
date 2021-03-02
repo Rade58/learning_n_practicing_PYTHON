@@ -70,8 +70,12 @@ MOGU TO URADITI SA `pop` METODOM, CIJA POVRATNA VREDNOST JESTE VALUE REMOVED KEY
 >>> baz = {"someone": "Nick", "amount": 8, "podcast": "some show"}
 >>> baz
 {'someone': 'Nick', 'amount': 8, 'podcast': 'some show'}
+# EVO UKLANJAM
 >>> baz.pop('someone')
 'Nick'
+# ZAISTA SAM UKLONIO PAIR
+>>> baz
+{'amount': 8, 'podcast': 'some show'}
 ```
 
 
