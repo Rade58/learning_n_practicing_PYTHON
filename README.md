@@ -137,7 +137,7 @@ POSTOJE I METODE SA IMANIMA KAO U NASLOVU
 
 S TIM STO `difference` METODA IMA ONAJ QUIRK PO KOJEM SAMO VACA DIFFERENCE ZA JEDAN
 
-# DA SE SADA PODSETIM TUPLE-OVA
+# DA SE SADA BAVIM SA `tuple`
 
 KADA PRAVIS TUPLE COMMA JE VAZN, A () SU OPCIONA STVAR
 
@@ -163,4 +163,25 @@ ZATO TUPLE SA JEDNIM CLANOM PRAVIM SA TRAILING COMMA
 >>> job
 'comedian'
 >>> 
+```
+
+# DA SE SADA POZABAVIM SA `dictionary`
+
+```py
+>>> my_dict = {"name": "Nick", "age": 48}
+>>> my_dict
+{'name': 'Nick', 'age': 48}
+```
+
+**NEMAJU INDEKSE, ALI BROJEVI MOGU BITI KLJUCEVI**
+
+AKO POKUSAS DA ACCESS-UJES VALUE SA NEPOSTOJECI KEY-OM DOBICES KEY ERROR
+
+DODACU JOS PAR ITEM-A
+
+```py
+>>> my_dict[8] = "something"
+>>> my_dict["amount"] = 48
+>>> my_dict
+{'name': 'Nick', 'age': 48, 8: 'something', 'amount': 48}
 ```
