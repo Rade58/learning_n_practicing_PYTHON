@@ -69,7 +69,25 @@ True
 
 **MISLIM DA JE I U JAVASCRIPT-U ISTA SITUACIJA; I TMO SU NEGATIVNI BROJEVI ISTO TRUTHY (MADA NA OVO NISAM NI MNOGO OBRACAO PAZNJU)**
 
-### `list` --> []
+## `float` 
+
+```py
+>>> bool(0.0)
+False
+```
+
+DA I GORNJE JE ZAISTA FALSY
+
+### `str` --> `""`
+
+```py
+>>> bool("")
+False
+```
+
+DA I GORNJE JE ZAISTA FALSY
+
+### `list` --> `[]`
 
 ```py
 >>> bool([])
@@ -78,7 +96,7 @@ False
 
 DAKLE EMPTY LIST JE FALSY
 
-### `dict` --> {}
+### `dict` --> `{}`
 
 ```py
 >>> bool({})
@@ -88,7 +106,7 @@ False
 
 DAKLE EMPTY DICTIONARY JE FALSY
 
-### `tuple` --> ()
+### `tuple` --> `()`
 
 ```py
 >>> bool(())
