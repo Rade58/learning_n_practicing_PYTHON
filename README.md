@@ -101,9 +101,19 @@ NAPRAVICU SADA PRAZAN SET PA CU MU NESTO DODATI
 {'Stavros', 'Adam', 'Nick'}
 ```
 
-SADA CU NESTO UKLONITI IZ TOG SET-A
+SADA CU NESTO UKLONITI IZ TOG SET-A (discard I remove) (JEDAN OD NJIH DAJE ERROR)
 
+```py
+>>> my_set.remove("Nick")
+>>> my_set
+{'Stavros', 'Adam'}
 
+>>> my_set.discard("John")
+>>> my_set.remove("John")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'John'
+```
 
 
 
