@@ -40,9 +40,12 @@ ALI KAO STO VIDIS, DOBAR JE ZA IGRANJE U REPLU, U CILJU PROVERE DA LI JE NESTO T
 
 ## IMAS OVDE TRUTHINESS CHEATSHEET
 
-<>
+<https://www.learnpython.dev/02-introduction-to-python/090-boolean-logic/10-truthiness/#cheat-sheet>
 
 ## DA POGLEDAM JA KOJE SU TO FALSY VREDNOSTI
+
+***
+***
 
 ### `int` --> 0
 
@@ -106,7 +109,17 @@ False
 
 DAKLE EMPTY SET JE FALSY
 
-# AKO OVI CONTAINER TYPE-OVI IMAJU PA BAR 1 ITEM, ONE SU EVALUATED TO TRUTHY
+### `'NoneType'` --> `None`
+
+```py
+>>> bool(None)
+False
+```
+
+***
+***
+
+# CISTO TI NPOMINJEM, AKO CONTAINER TYPE-OVI IMAJU BAR 1 ITEM, ONE SU EVALUATED TO TRUTHY
 
 ```py
 >>> bool([8])
