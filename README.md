@@ -80,3 +80,12 @@ TypeError: unhashable type: 'set'
 ```
 
 DOBIO SI TYPE ERROR JER SI KORISTIO SET KAO KEY
+
+# SECAS SE DA JE TUPLE IMMUTABLE; ON ZAISTA MOZE DA BUDE KLJUC
+
+```py
+>>> {(1 , "Mike", 4): "Kevin"}
+{(1, "Mike", 4): 'Kevin'}
+```
+
+NE ZNAM KOLIKO JE OVO HELPFUL, ALI FUNKCIONISE
