@@ -193,3 +193,20 @@ DA ACCESS-UJEM NESTO
 48
 ```
 
+AKO NESTO NEMA
+
+```py
+>>> my_dict["goat"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'goat'
+
+# DA SE OSIGURAM DA NE DOBIJEM ERROR
+>>> my_dict.get("goat") # NISTA NE VRACA
+
+# ILI DA SE OSIGURAM DA RETURN-UJEM DEFAULT, KAD NEMA NICEGA
+
+>>> my_dict.get("goat", "horse")
+'horse'
+```
+
