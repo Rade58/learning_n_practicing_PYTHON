@@ -1,24 +1,7 @@
-# ORDER INSIDE DICTIONARY, JE SORT OF PERSERVED
+# MUTABILITY CHEATSHEET
 
-ITEMI, ODNONO KEY/VALUE PAIRS SU SORTED PO ORDERU UNOSA, ODNOSNO ORDERU INSERT-A (PO INSERTION ORDER-U)
+OVDE IMAS DOBAR CHEATSHEET
 
-EVO NA STA MISLIM
+<https://www.learnpython.dev/02-introduction-to-python/080-advanced-datatypes/65-mutability/>
 
-```py
->>> foo = {"z": "Kevin", "a": 8}
->>> foo
-# VIDIS DA JE ORDER ONAKAV KAKO SAM ITEME LAY-OVAO PRI DEKLARISANJU
-{'z': 'Kevin', 'a': 8}
-```
 
-SADA KADA UNESEM NOVI ITEM, ON BI TREBALO DA BUDE POSLEDNJI
-
-```py
->>> foo["place"] = "Maldives"
->>> foo
-{'z': 'Kevin', 'a': 8, 'place': 'Maldives'}
-```
-
-## NARVNO, OPET TI NAPOMINJEM DA SE ITEMI MOGU SAMO ACCESS=OVATI BY KEY
-
-NE MOGU BY INDEX
