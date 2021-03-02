@@ -185,3 +185,11 @@ DODACU JOS PAR ITEM-A
 >>> my_dict
 {'name': 'Nick', 'age': 48, 8: 'something', 'amount': 48}
 ```
+
+DA ACCESS-UJEM NESTO
+
+```py
+>>> my_dict["amount"]
+48
+```
+
