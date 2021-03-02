@@ -1,37 +1,36 @@
-# PRACTICING ADVANCED TYPES
+# del KEYWORD
 
-**PORED TOGA STO CU PROVEZBATI NEKE STVARI JA CU SAZNATI ZA NEKE ADVANCED TEHNIKE (KOJIMA CU MOZDA POSVETITI NOVE BRANCHE-EVE KOJI POCINJU SA 8)**
-
-ZA POCETAK UPOTREBICU OVDE append I ACCESS-OVACU NEKIM ITEMIMA LISTE
+PROPRILICNO JE INTUITIVO
 
 ```py
->>> foo = ["h", "e", "l", "l", "o"]
->>> foo.append("!")
+>>> foo = ["h", "i", "i", "a", "m", "me"]
+>>> del foo[2]
 >>> foo
-['h', 'e', 'l', 'l', 'o', '!']
->>> len(foo)
-6
->>> foo[4]
-'o'
+['h', 'i', 'a', 'm', 'me']
 ```
 
-SADA MOGU DA SA remove UKLONIM ,NEKI ITEM IZ NEKE LISTE, ALI SADA UKLANJAS PREMEMA ITEMU, ODNOSNO VALUE-U, A NE PREM INDEKSU
+KAO STO VIDIS UKLONIO SAM ITEM KOJI JE IMAO INDEX 2, IZ MOJE LISTE
+
+MISLIM DA SAM VEC RANIJE KORISTIO .remove METODU
+
+ALI UPOTREBICU JE JOS JEDNOM, **I KOD NJE SE NE KORISTE INDEX VEC VALUE**
 
 ```py
->>> foo = ['h', 'e', 'l', 'l', 'o', '!']
->>> foo.remove("l")
+>>> foo.remove("i")
 >>> foo
-['h', 'e', 'l', 'o', '!']
+['h', 'a', 'm', 'me']
+>>> 
 ```
 
-PA MOGU DA SA `insert` DA UNESEM NESTO ISPRED NEKOG INDEKSA
+# MEDJUTIM del SE MOZE KORISTITI I NA DICTIONARY-JU
 
 ```py
->>> foo.insert(2, "l")
->>> foo
-['h', 'e', 'l', 'l', 'o', '!']
+>>> bar = {2: 8, "some": True}
+>>> bar
+{2: 8, 'some': True}
+>>> del bar[2]
+>>> bar
+{'some': True}
 ```
-
-
 
 
