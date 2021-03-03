@@ -1,3 +1,18 @@
 # PRACTICING BOOLEAN LOGIC
 
+SAMO CU PISATI, NECU SE TRUDITI DA OBJASNJAVAM JER SAMM TO U VELIKOJ MERI URADIO
+
+```py
+>>> 10 > 8
+True
+>>> 8 > 10
+False
+>>> 8 >= 10
+False
+>>> 6 == 6
+True
+>>> 6 >=6
+True
+```
+
 
