@@ -9,6 +9,8 @@ digresija:
 
 GOVORICU O `for` LOOP-OVIMA U PYTHON-U I O STATEMENTIMA `if else` `else if`
 
+ALI GOVORICU I O `while` LOOP-OVIMA I O `brak` I `continue` KEYWORD-OVIMA
+
 ***
 ***
 
