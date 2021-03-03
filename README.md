@@ -129,5 +129,30 @@ I DA VIDIM KOJE SU VREDNOSTI VARIJABLI NA KRAJU
 
 # COMMON ERROR KOJI LJUDI PRAVE VEZAN ZA LOOPING THROUGH DICTIONARY
 
+ODMAH CU TI RECI DA JE TO PREDPOSTAVKA OD LJUDI DA IM JE U CURRENT ITERACIJI DOSTUPAN I VALUE PORED KEY-A
 
+VALUE IM NECE BITI DOSTUPAN
 
+```py
+>>> my_dict = {"name": "Nick", "amount": 18000, "age": 31, "nickname": "Nikky"}
+>>> for kljuc, vrednost in my_dict:
+...     print(kljuc, vrednost)
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: too many values to unpack (expected 2)
+```
+
+KAO STO VIDIS IMAS ERROR JER NEMAS STA DA UNPACK-UJES U vrednost VARIJABLU
+
+TI JEDINO NA GORNJI NACIN IMAS PRISTUP SAMO CURRENT KLJUCU
+
+```py
+>>> for kljuc in my_dict:
+...     print(kljuc)
+... 
+name
+amount
+age
+nickname
+```
