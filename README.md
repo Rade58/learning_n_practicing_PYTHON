@@ -143,4 +143,12 @@ EVO OVDE SAM DEFINISAO RANGE OD NULA DO 9, S TIME STO CE SE SBOG STEP-A KORISTIT
 4
 6
 8
+
+# EVO I SVAKI TRECI
+>>> for num in range(0,9,3):
+...     print(num)
+... 
+0
+3
+6
 ```
