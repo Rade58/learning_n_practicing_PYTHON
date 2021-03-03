@@ -29,7 +29,8 @@ EVO LOOP-UJEM KROZ ITEMS
 ```py
 >>> for item in my_dict.items():
 ...     print(item)
-... 
+...
+# IMAM TUPLE SATAVLJEN OD KEY-A I VALUE-A U SVAKOJ ITERACIJI 
 ('name', 'Stavros')
 ('age', 34)
 ('welth', 18000)
@@ -41,7 +42,8 @@ LOOP-UJEM KROZ VALUES
 ```py
 >>> for value in my_dict.values():
 ...     print(value)
-... 
+...
+# U SVAKOJ ITERACIJI STMAPAN JE CURRENT VALU
 Stavros
 34
 18000
