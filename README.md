@@ -34,4 +34,8 @@ PROBACU DA COMPARE-UJEM DVA KARAKTERA
 ```py
 >>> "S" < "s"
 True
+>>> "f" < "g"
+True
+>>> "d" > "e"
+False
 ```
