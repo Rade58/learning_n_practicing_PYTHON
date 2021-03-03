@@ -115,5 +115,17 @@ EVO POGLEDAJ
 8
 ```
 
+## ZA RANGE SE MOGU PROVIDE-OVATI I DVE VREDNOSTI
 
+```py
+>>> for num in range(4,9):
+...     print(num)
+... 
+4
+5
+6
+7
+8
+```
 
+KAO STO VIDIS POCEO SAM OD 4 KOJI JE INCLUSIVE, PA DO 9, A 9 NIJE INCLUSIVE
