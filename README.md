@@ -49,3 +49,33 @@ Stavros
 18000
 Metal
 ```
+
+# MOGUCE JE UNPACK-OVATI TUPLE U SVAKOJ ITERCIJI
+
+```py
+>>> for label, val in my_dict.items():
+...     print(label)
+...     print(val)
+... 
+name
+Stavros
+age
+34
+welth
+18000
+music
+Metal
+```
+
+S OBZIROM DA SU VARIJABLE U OJEM SAM UNPACK-OVAO TUPLE USTVARI GLOBALNE, I NISU SCOPED TO FOR LOOP, JER REKAO SAM TI VEC DA LOOP NEMA SVOJ SCOPE
+
+I S OBZIROM DA JE U POSLEDNJOJ ITERACIJI, KLJUC BIO "music", A VALUE BILA "Metal"; VARIJABLE BI TREBALE DA IMAJU TE VREDNOSTI
+
+TO CU I PROVERITI
+
+```py
+>>> label
+'music'
+>>> val
+'Metal'
+```
