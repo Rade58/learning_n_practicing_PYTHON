@@ -2,7 +2,7 @@
 
 U PYTHON-U MOZES COMPARE-OVATI STVARI SAME TYPE-A
 
-## OPERATORI SU: `<` `>` `>=` `<=` `==`
+## OPERATORI SU: `<` `>` `>=` `<=` `==` `!=`
 
 ```py
 >>> 5 > 4
@@ -14,6 +14,8 @@ True
 >>> 5 <= 5
 True
 >>> 5 == 5
+True
+>>> 5 != 6
 True
 ```
 
@@ -40,5 +42,21 @@ True
 False
 >>> "bat" < "cat"
 True
+```
 
+**DAKLE ISPADA DA JE PO ABECEDNOM REDU ONAJ KARAKTER KOJI JE LEVO MANJI OD ONOG KARAKTERA KOJI JE DESNO**
+
+**A VELIKA SLOVA SU UVEK MANJA OD MALIH**
+
+## STVARI POSTAJU NESTO KOMPLIKOVANIJE KADA COMPARE-UJES ADVANCED TYPES, I OVDE SE PYTHON DRASTICNO RAZLIKUJE OD JAVASCRIPTA
+
+IAKO SU PO MOJOJ PROCENI DVE LISTE UNIQUE, IPAK NIJE TAKO, JER KAO STO VIDIS OVO JE EVALUATED TO TRUE
+
+```py
+>>> [1,2,3] == [1,2,3]
+True
+>>> lista_1 = [8]
+>>> lista_2 = [8]
+>>> lista_1 == lista_2
+True
 ```
