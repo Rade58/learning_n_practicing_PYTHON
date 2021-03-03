@@ -2,6 +2,8 @@
 
 ***
 ***
+***
+***
 
 digresija:
 
@@ -13,4 +15,12 @@ ALI GOVORICU I O `while` LOOP-OVIMA I O `brak` I `continue` KEYWORD-OVIMA
 
 ***
 ***
+***
+***
+
+FOR LOOPS U PYTHONU TREBALE BI DA BUDU A LOT NICER NEGO ONE U JAVASCRIPT-U
+
+```py
+
+```
 
