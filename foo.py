@@ -1,6 +1,12 @@
-my_list = [4, 2,
+print("foobar")
 
-# VIDI KAKO SAM GORE ZABORAVIO DA ENCLOSE-UJEM
-# I RECIMO DA SAM OVDE NASTAVIO I POKUSAO DA DEKLARISEM VARIJABLU
+# EVO DODAJEM try except
+try:
+    num = int("foobar")
+except ValueError:
+    print("Opps, you have Value Error, you can't do that")
 
-x = 6
+# ZATO STO SAM GORE HANDLE-OVAO ERROR
+# OVO ISPOD CE SE NESMETANO IZVRSITI
+
+print("This is something random")
