@@ -73,3 +73,16 @@ print(f"dunnder name: {__name__}")  # OVO SE STAMPALO
 
 **KADA SAM RUNN-OVAO OVAJ LIBRARY FILE, ONO STO SAM GORE NAVEO U COMMENTU, STAMPALO SE U TERMINALU**
 
+KAO STO VIDIS, TO `__name__` JE USTVARI `__main__`
+
+**A STA BI SE DESILO KADA BI SADA RUN-OVAO FILE, U KOJEM SE KORISTI GORNJI LIBRARY, A TO JE FILE `my_program.py`**
+
+```bash
+Kevin Kevanson
+JOHN
+# OVO ME DAKLE ZANIMA VIDIS DA JE SADA ONO __name__ UPRAVO
+# ISTI NAME, KOJIM SAM NAZVAO LIBRARY FILE
+dunnder name: name_lib
+# --------------------------------
+STAVROS
+```
