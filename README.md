@@ -1,6 +1,6 @@
 # `while` LOOP AND CONTROL STATEMENTS
 
-NISAM SE BAVIO DO SADA SA while LOOP-OM U PYTHON
+NISAM SE DO SADA BAVIO DO SADA SA while LOOP-OM U PYTHON
 
 POPRILICNO MI JE INTUITICNO KAKO CE IZGLEDATI OVAJ LOOP
 
@@ -10,7 +10,7 @@ POPRILICNO MI JE INTUITICNO KAKO CE IZGLEDATI OVAJ LOOP
 
 `break` SLUZI DA SE POTPUNO ESCAPE-UJE LOOP
 
-# EVO JEDAN LOOP BEZ POMENUTIH KEYWORD-OVA
+# EVO JEDAN while LOOP BEZ POMENUTIH KEYWORD-OVA
 
 ```py
 >>> counter = 8
@@ -106,3 +106,24 @@ count_2 --> 0.5
 ```
 
 MISLIM DA JE SVE JASNO
+
+# POMENUTI KEYWORD-OVI SE MOGU KORISTITI I SA `for` LOOP-OVIMA
+
+POGLEDAJ OVO
+
+```py
+>>> names = ["Kevin", "Tim", "Kelly", "Stavros", "Jonthan", "Sally", "Emillia", "Henrik"]
+>>> for name in names:
+...     print(f"name --> {name}")
+...     if name == "Sally":
+...             break
+... 
+name --> Kevin
+name --> Tim
+name --> Kelly
+name --> Stavros
+name --> Jonthan
+name --> Sally 
+```
+
+I OVO JE SASVIM JASNO; SAVIM JE JASNO GDE SAM PREKINUO LOOP I KADA SE PRESTALO SA LOOPING THROUGH LIST
