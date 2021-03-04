@@ -143,3 +143,6 @@ print(name_lib.name_to_uppercase("stavros"))
 STAVROS
 ```
 
+# PRIMECUJEM DA OD KADA KORISTIM LIBRARY IMAM I GENERISAN NOVI FOLDER U PROJEKTU
+
+TO JE **`__pycache__`** FOLDER
