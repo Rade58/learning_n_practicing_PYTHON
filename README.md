@@ -44,3 +44,16 @@ Stavros
 'Stavros'
 ```
 
+# `else` KORISTIS AKO ZELIS DA SE RUNN-UJE ONO STO JE OPOSITE OD TRUE CONDITION-A
+
+```py
+>>> name = "Stavi"
+>>> if name == "Nick":
+...     print("Nick")
+... else:
+...     print(name)
+... 
+Stavi
+```
+
+KAO STO VIDIS STAMPALO SE ONO STO SAM ZADAO U U OKVIRU else-A
