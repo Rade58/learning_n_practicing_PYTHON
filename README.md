@@ -164,3 +164,40 @@ Michael
 ```
 
 I JASNO JE DA SE continue DAKLE IZVRSAVAO ZA NESTED LOOP I NIJE SE TAKORECI SA NJIM UTICALO NA OUTER LOOP
+
+ISTO BI VAZILO I ZA break
+
+```py
+>>> names = ["Sally", "Kevin", "Michael", "Jeffrey", "Tomen", "Ena"]
+>>> count = 6
+>>> while True:
+...     print(count)
+...     for name in names:
+...             print(name)
+...             if name == "Michael":
+...                     break
+...     count = count - 1
+...     if count < 2:
+...             break
+... 
+6
+Sally
+Kevin
+Michael
+5
+Sally
+Kevin
+Michael
+4
+Sally
+Kevin
+Michael
+3
+Sally
+Kevin
+Michael
+2
+Sally
+Kevin
+Michael
+```
