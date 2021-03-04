@@ -65,3 +65,34 @@ foobar
 Opps, you have Value Error, you can't do that
 This is something random
 ```
+
+## MOZES KORISTITI `as` KEYWORD KAKO BI USE-OVAO ERROR MESSAGE
+
+- `code foo.py`
+
+EVO POGLEDAJ
+
+```py
+print("foobar")
+
+
+try:
+    num = int("foobar")
+# EVO VIDIS ZAO SAM JO IME error
+except ValueError as error:
+    # I TO SAM EMMBEDOVAO U f STINGU
+    print(f"Opps, you have {error}, you can't do that")
+
+
+print("This is something random")
+```
+
+SADA CU RUN-OVATI FILE I VIDECES I ERROR MESSAGE U ONOME STO STAMPAM UNDER except
+
+```
+foobar
+Opps, you have invalid literal for int() with base 10: 'foobar', you can't do that
+This is something random
+```
+
+NARAVNO, ONO TO JE DOSLO ISPOD try except BLOKA, I DALJE JE UREDNO IZVRSENO
