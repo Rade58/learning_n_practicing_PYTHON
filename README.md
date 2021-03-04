@@ -127,3 +127,9 @@ name --> Sally
 ```
 
 I OVO JE SASVIM JASNO; SAVIM JE JASNO GDE SAM PREKINUO LOOP I KADA SE PRESTALO SA LOOPING THROUGH LIST
+
+## U WORKSHOP WEBSITE0U POTOJI I HELPFUL VIZUALIZACIJA
+
+IAKO MI JE JASNO IPAK CU OSTAVITI LINK
+
+<https://www.learnpython.dev/02-introduction-to-python/110-control-statements-looping/40-break-continue/#break-and-continue-visualized>
