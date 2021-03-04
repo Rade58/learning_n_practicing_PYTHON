@@ -1,37 +1,11 @@
-# INCREMENT I DECREMENT
+# FILES & MODULES
 
-POTPUNO SAM NEKOKO U PROSLIM PRIMERIMA ZAOBISAO DA OVO MOGU RADITI; IAKO SAM J KORISTIO VALIDNU SINTAKSU ASSIGNMENTA, SAMO STO SAM TADA KORISTUI DUZU SINTAKSU
+KONACNO CU PYTHON DA POCNEM DA PISEM U FILE-OVIMA
 
-NAIME TREBALO JE DA UPOTREBIM `counter += broj` ILI `counter -= broj` UMESTO ONOG DUZEG BPISANJA `counter = counter + broj` ILI `counter = counter - broj`
+KONVENCIJA ZA NEMAING FILE-OVA JE LOWECASE WITH UNDERSCORE
 
-EVO NAJBOLJE CES VIDETI IZ PRIMERA
+**RUNN-OVACU PYTHON FILES FROM VSCODE**
 
-```py
->>> count = 0
->>> while count < 4:
-...     print(count)
-...     count += 1
-... 
-0
-1
-2
-3
+# DA NAPRAVIM JEDAN FILE U SKLADU SA POMENUTOM KONVENCIJOOM
 
-
-
->>> counter = 10
->>> while True:
-...     print(counter)
-...     if counter == 4:
-...             break
-...     counter -= 2
-... 
-10
-8
-6
-4
-
-```
-
-MISLIM DA JE OVO SUVISNO OBJASNJAVATI
-
+- `touch my_greetings.py`
