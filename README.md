@@ -50,3 +50,59 @@ Hello World! 9
 
 MISLIM DA JE I OVO GORE SUVISNO OBJASNJAVATI
 
+# `continue` AND `break`
+
+VEC SAM IH OBJASNIO, ALI SADA HAJDE DA IH ISPROBAM
+
+```py
+# IMAM DVA COUNTA
+>>> count_1 = 0
+>>> count_2 = 9
+# IMAM ENDLESS LOOP, JER CE CONDITION UVEK BITI TRUE
+>>> while True:
+        # OVO CE BITI ISPUNJNO SVE DOK COUNT 1 NE PORASTE
+...     if count_1 < 5:
+...             print(f"count_1 --> {count_1}")
+...             count_1 = count_1 + 1
+                # OVO JE DAKLE JEEDNA OD BITNIJIH STVARI JER JE
+                # PRESKOCENO SVE ISPOD continue DA BI SE PRESLO U NAREDNU ITERACIJU
+...             continue
+        # POSTO GORNJA USLOVNA IZJAVA KRENE DA EVALUATE-UJE TO FALSE OVO SLEDECE CE SE IZVRSVATI
+...     print(f"count_2 --> {count_2}")
+...     count_2 = count_2 - 0.5
+        # SVE DOK DRUGI COUNT NE PADNE DO NULA
+        # LOOP CE RADITI
+        # I KADA COUNT2 BUDE 0 A KADA SE ISPRED
+        # 0 STAVI not TO SE EVALUATE-UJE TO False
+        # ONDA CE SE ONO UUNDER USLOVNE IZJAVE IZVRSITI
+...     if not count_2:
+                # A TO JE BREAKING , ODNOSNO ESCAPING FROM THE LOOP
+...             break
+... 
+# UPRAVO JE SVE ZATO OVAKO STAMPANO
+count_1 --> 0
+count_1 --> 1
+count_1 --> 2
+count_1 --> 3
+count_1 --> 4
+count_2 --> 9
+count_2 --> 8.5
+count_2 --> 8.0
+count_2 --> 7.5
+count_2 --> 7.0
+count_2 --> 6.5
+count_2 --> 6.0
+count_2 --> 5.5
+count_2 --> 5.0
+count_2 --> 4.5
+count_2 --> 4.0
+count_2 --> 3.5
+count_2 --> 3.0
+count_2 --> 2.5
+count_2 --> 2.0
+count_2 --> 1.5
+count_2 --> 1.0
+count_2 --> 0.5
+```
+
+MISLIM DA JE SVE JASNO
