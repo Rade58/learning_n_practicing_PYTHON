@@ -55,5 +55,21 @@ BILO STA STO JE U PYTHON-U NAPISANO SA OVAKVIM UNDERSCORE-OVIMA SE JOS NAZIVA I 
 
 TAKO DA SE GORNJI `__name__` JOS NAZIVA I **DUNNDER NAME**
 
+**DEFINISACU DA SE DUNNDER NAME STMPA IZ LIBRARY FILE-A**
 
+- `code name_lib.py`
+
+```py
+def name_to_uppercase(name="john"):
+    return name.upper()
+
+
+print("Kevin Kevanson")
+print(name_to_uppercase())
+
+print(f"dunnder name: {__name__}")  # OVO SE STAMPALO
+#                                   dunnder name: __main__
+```
+
+**KADA SAM RUNN-OVAO OVAJ LIBRARY FILE, ONO STO SAM GORE NAVEO U COMMENTU, STAMPALO SE U TERMINALU**
 
