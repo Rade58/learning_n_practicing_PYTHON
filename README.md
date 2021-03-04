@@ -1,21 +1,37 @@
-# `return` STATEMENT INSIDE LOOP
+# INCREMENT I DECREMENT
 
-AKO IMAS FUNKCIJU I U NJOJ LOOP, I AKO UPOTREBIS return INSIDE LOOP, TO CE NARAVNO PREKINUTI LOOP JER JE SAM FUNKCIJA ISTO RETURNED, ODNONO I ONA CE PRESTATI SA RADOM
+POTPUNO SAM NEKOKO U PROSLIM PRIMERIMA ZAOBISAO DA OVO MOGU RADITI; IAKO SAM J KORISTIO VALIDNU SINTAKSU ASSIGNMENTA, SAMO STO SAM TADA KORISTUI DUZU SINTAKSU
+
+NAIME TREBALO JE DA UPOTREBIM `counter += broj` ILI `counter -= broj` UMESTO ONOG DUZEG BPISANJA `counter = counter + broj` ILI `counter = counter - broj`
+
+EVO NAJBOLJE CES VIDETI IZ PRIMERA
 
 ```py
->>> def foo():
-...     count = 8
-...     while True:
-...             print(count)
-...             count -= 1
-...             if count == 4:
-...                     return
+>>> count = 0
+>>> while count < 4:
+...     print(count)
+...     count += 1
 ... 
->>> foo()
+0
+1
+2
+3
+
+
+
+>>> counter = 10
+>>> while True:
+...     print(counter)
+...     if counter == 4:
+...             break
+...     counter -= 2
+... 
+10
 8
-7
 6
-5
+4
+
 ```
 
-KAO STO VIDIS return STATEMENT JE ZAISTA ESCAPE-OVAO LOOP
+MISLIM DA JE OVO SUVISNO OBJASNJAVATI
+
