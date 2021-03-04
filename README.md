@@ -133,3 +133,34 @@ I OVO JE SASVIM JASNO; SAVIM JE JASNO GDE SAM PREKINUO LOOP I KADA SE PRESTALO S
 IAKO MI JE JASNO IPAK CU OSTAVITI LINK
 
 <https://www.learnpython.dev/02-introduction-to-python/110-control-statements-looping/40-break-continue/#break-and-continue-visualized>
+
+# `break` AND `continue` INSIDE NESTED LOOPS
+
+U NESTED LOOP-OVIMA OVI KEYWORD-OVI CE BITI SCOPED TO THE RIGHT LOOP
+
+```py
+>>> names = ["Sally", "Kevin", "Michael", "Jeffrey"]
+>>> count = 6
+>>> while True:
+...     print(count)
+...     for name in names:
+...             if name != "Michael":
+...                     continue
+...             print(name)
+...     count = count - 1
+...     if count == 2:
+...             break
+... 
+
+# SASVIM JE JASNO ZASTO JE OVAKAV REZULTAT
+6
+Michael
+5
+Michael
+4
+Michael
+3
+Michael
+```
+
+I JASNO JE DA SE continue DAKLE IZVRSAVAO ZA NESTED LOOP I NIJE SE TAKORECI SA NJIM UTICALO NA OUTER LOOP
