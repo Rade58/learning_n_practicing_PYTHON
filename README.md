@@ -26,3 +26,6 @@ VSCODE KNOWS IT IS A PYTHON BECAUSE YOU SAVED FILE WITH `.py` EXTENSION
 
 # RUN-OVANJE PYTHON FILE-A FROM VSCODE TERMINAL
 
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+
+BIRAS KOMANDU `Python: Run Python File In Terminal`
