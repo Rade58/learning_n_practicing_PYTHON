@@ -1,5 +1,10 @@
 # CONTROL FLOW
 
+OVDE CU GOVORITI O `if`, O `if else` I O `elif`
+
+
+# `if` STATEMENT
+
 CONTENT OF if CONDITIONAL STATEMENT WILL ONLY RUN IF THE CONDITION IS True OR TRUTHY
 
 ```py
@@ -57,3 +62,31 @@ Stavi
 ```
 
 KAO STO VIDIS STAMPALO SE ONO STO SAM ZADAO U U OKVIRU else-A
+
+# `elif` STATEMENT
+
+SAMO DA KAZEM DA SE SA ONO STO JE UNDER ELSE IF IZVRSAVA U SLUCAJU POSEBNO ZA NJU ZADATOG CONDITIONALA ONDA KADA JE:
+
+- USLOV IZ if STATMENTA, USTVARI False ILI FALSY
+
+- I KADA JE USLOV IZ elif-A, USTVARI True ILI TRUTHY
+
+U TOM SLUCAJU `elif` IMA PREDNOST U ODNOSU NA `else`
+
+```py
+>>> a = False
+>>> b = True
+>>> if a:
+...     print("Hello!")
+... elif b:
+...     print("Stavros")
+... else:
+...     print("World!")
+... 
+Stavros
+```
+
+KAO STO SE VIDI ONO UNDER elif JE STAMPANO
+
+ISTO TAKO **else** MORA DOCI ISPOD **elif**, U SUPROTNOM CES IMATI SYTAX ERROR
+
