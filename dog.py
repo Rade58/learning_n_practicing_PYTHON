@@ -1,8 +1,6 @@
 import requests
 
-# EVO SALACU REQUEST AGINST OTHER URL
-# api_url = "https://shibe.online/api/shibes?count=1"
-api_url = "http://shibe.online/api/blah"
+api_url = "https://shibe.online/api/shibes?count=1"
 
 response = requests.get(api_url)
 
