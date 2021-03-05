@@ -1,4 +1,4 @@
-import requests
+# import requests
 
 # ZELIM A RUNN-UJEM CODE IN THE __main__ METHOD
 
@@ -7,8 +7,10 @@ import requests
 
 # DAKLE TO JE pass KEYWORD
 
+
+def foo():
+    print("blah")
+
+
 if __name__ == "__main__":
     pass
-
-
-print("Random stuff")
