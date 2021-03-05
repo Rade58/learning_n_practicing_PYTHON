@@ -239,7 +239,9 @@ if __name__ == "__main__":
 
 POKRENUO SAM FILE
 
-I OVO JE ONO STA SE STAMPALP U TERMINALU
+I OVO JE ONO STA SE STAMPALO U TERMINALU
+
+DAKLE STAMPALO SE IME REPO-A, JEZIK REPO, I BROJ ZVEZDICA
 
 ```json
 freeCodeCamp --> JavaScript --> 321303
@@ -251,3 +253,7 @@ coding-interview-university --> None --> 156058
 awesome --> None --> 154313
 tensorflow --> C++ --> 153751
 ```
+
+# SADA CU MALO RADITI NESTO SLOZENIJI QUERY ZA GITHUB RESURSIMA
+
+
