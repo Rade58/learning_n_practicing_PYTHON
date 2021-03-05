@@ -292,7 +292,7 @@ def repoi_sa_najvise_starova(query):
     # I DA ORDER BUDE ASCENDING
 
     params = {"q": query, "page": 1, "per_page": 8,
-              "order": "asc", "sort": "fork"}
+              "order": "asc", "sort": "forks"}
 
     response = requests.get(gh_api_url, params=params)
 
