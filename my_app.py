@@ -6,7 +6,9 @@ def repoi_sa_najvise_starova():
 
     # DODAJEM PARAMS
     # SHODNO API-U, JA SERCH-UJEM ZA REPO SA VISE OD 48000 STAROVA
-    params = {"q": "stars:>48000"}
+    # A POSTO CE BITI UZETI OGROMNI PODACI ODLUCIO SAM DA LIMITIRAM
+    # BROJ SA PARMETRIMA page I per_page
+    params = {"q": "stars:>48000", "page": 1, "per_page": 1}
 
     # DODAJEM I prams
     response = requests.get(gh_api_url, params=params)
