@@ -26,7 +26,11 @@ def repoi_sa_najvise_starova(query):
     # OVDE SAD UMESTO OVOGA
     # params = {"q": "stars:>48000", "page": 1, "per_page": 8}
     # KORISTIM PASSED IN QUERY
-    params = {"q": query, "page": 1, "per_page": 8}
+    # # UZ TO CU DODATI DA SE SORT-UJU PREMA BROJU FORKOVA
+    # I DA ORDER BUDE ASCENDING
+
+    params = {"q": query, "page": 1, "per_page": 8,
+              "order": "asc", "sort": "fork"}
 
     response = requests.get(gh_api_url, params=params)
 
