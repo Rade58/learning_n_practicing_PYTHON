@@ -6,16 +6,24 @@ def repoi_sa_najvise_starova():
 
     params = {"q": "stars:>48000", "page": 1, "per_page": 1}
 
-    # DODAJEM I params
     response = requests.get(gh_api_url, params=params)
 
-    # UMESTO OVOGA
-    # print(response.text)
-    # OVO PISEM
     response_json = response.json()
-    print(response_json)
 
-# -------------------------------------------
+    # print(response_json.keys())
+
+    # EVO STA PRINT-UJEM
+    # ZANIMA ME KOJEG JE TYPE-A items
+
+    print(type(response_json["items"]))  # U PITANJU JE LISTA
+
+    # KOLIKO JE DUGACKA
+    print(len(response_json["items"]))  # 1
+
+    # STA OD PROPERTIJA IMA ITEM
+
+    print(response_json["items"][0].keys())  # OVO CU TI POKAZATI ISPOD
+# ---------------------------------------------------------
 
 
 if __name__ == "__main__":
