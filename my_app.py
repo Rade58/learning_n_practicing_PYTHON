@@ -10,19 +10,13 @@ def repoi_sa_najvise_starova():
 
     response_json = response.json()
 
-    # print(response_json.keys())
+    # ------- OVO SAM COMMENT-OVAO OUT -----------
+    """ print(type(response_json["items"]))
 
-    # EVO STA PRINT-UJEM
-    # ZANIMA ME KOJEG JE TYPE-A items
+    print(len(response_json["items"]))
 
-    print(type(response_json["items"]))  # U PITANJU JE LISTA
-
-    # KOLIKO JE DUGACKA
-    print(len(response_json["items"]))  # 1
-
-    # STA OD PROPERTIJA IMA ITEM
-
-    print(response_json["items"][0].keys())  # OVO CU TI POKAZATI ISPOD
+    print(response_json["items"][0].keys())  """
+    # --------------------------------------------
 # ---------------------------------------------------------
 
 
