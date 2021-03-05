@@ -32,3 +32,34 @@ print("status code: ", status_code)
 ```bash
 status code:  200
 ```
+
+**PROBAJ DA NAMERNO POGRESISI URL, PROMENI NEKI KARAKTER, PA ONDA RUNUJ FILE**
+
+- `code dog.py`
+
+```py
+import requests
+
+# EVO SALACU REQUEST AGINST OTHER URL
+# api_url = "https://shibe.online/api/shibes?count=1"
+api_url = "http://shibe.online/api/blah"
+
+response = requests.get(api_url)
+
+status_code = response.status_code
+
+print("status code: ", status_code)
+```
+
+VIDECES DA JE U TERMINAL-U PRINTED STATUS CODE 404
+
+```bash
+status code:  404
+```
+
+
+
+
+
+
+
