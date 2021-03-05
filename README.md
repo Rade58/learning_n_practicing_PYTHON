@@ -288,7 +288,11 @@ def repoi_sa_najvise_starova(query):
     # OVDE SAD UMESTO OVOGA
     # params = {"q": "stars:>48000", "page": 1, "per_page": 8}
     # KORISTIM PASSED IN QUERY
-    params = {"q": query, "page": 1, "per_page": 8}
+    # # UZ TO CU DODATI DA SE SORT-UJU PREMA BROJU FORKOVA
+    # I DA ORDER BUDE ASCENDING
+
+    params = {"q": query, "page": 1, "per_page": 8,
+              "order": "asc", "sort": "fork"}
 
     response = requests.get(gh_api_url, params=params)
 
@@ -316,12 +320,12 @@ MOZES RUNN-OVTI FILE
 I ONO STO BI TI SADA TREBALO BITI PRIKAZNO U TERMINALU JESTE DATA ZA 8 PYTHON REPO-O KOJI IMAJU VISE OD 38000 STAROVA
 
 ```json
-system-design-primer --> Python --> 122941
-public-apis --> Python --> 112057
-Python --> Python --> 100618
-Python-100-Days --> Python --> 100265
-awesome-python --> Python --> 94619
-youtube-dl --> Python --> 91085
-models --> Python --> 68935
+big-list-of-naughty-strings --> Python --> 39897
 thefuck --> Python --> 59189
+httpie --> Python --> 50072
+youtube-dl --> Python --> 91084
+you-get --> Python --> 39334
+requests --> Python --> 44709
+scrapy --> Python --> 39968
+transformers --> Python --> 41836
 ```
