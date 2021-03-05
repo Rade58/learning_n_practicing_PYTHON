@@ -25,7 +25,8 @@ def repoi_sa_najvise_starova(query, sort="stars", order="desc"):
     # OVDE CU DA PROVERIM STATUS CODE
     if response.status_code != 200:
         # I OVDE CU RAISE-OVATI RUNTIME ERROR
-        raise RuntimeError("An error occured!")
+        raise RuntimeError(
+            f"An error occured! Status code: {response.status_code}")
 
     response_json = response.json()
 
