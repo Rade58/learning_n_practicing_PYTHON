@@ -85,3 +85,40 @@ if __name__ == "__main__":
 ```
 
 RUN-OVAO SAM FILE I NECU TI POKAZIVATI TO, ALI U TERMINALU IMAM OGROMAN BROJ PODATKA (MNOGU URL-OVA RAZLICITIH REPO-A KOJI SU RATED PREKO 48000 STAROVA NA GITHUB-U)
+
+# SAD CU TAJ JSON KOJI SAM DOBIO USTVARI PARSE-OVATI U VALIDNI DATA TYPE OF PYTHON
+
+TO SI VEC RADIO U JEDNOM OD PROSLIH BRANCH-EVA
+
+OVOG PUTA CU IMATI JEDAN VELIKI DICTIONARY
+
+POMENUTO RADIS SA response.json STO SI, KAKO SAM REKAO I RANIJE JEDNOM RADIO
+
+- `code my_app.py`
+
+```py
+import requests
+
+
+def repoi_sa_najvise_starova():
+    gh_api_url = "https://api.github.com/search/repositories"
+
+    params = {"q": "stars:>48000", "page": 1, "per_page": 1}
+
+    # DODAJEM I params
+    response = requests.get(gh_api_url, params=params)
+
+    # UMESTO OVOGA
+    # print(response.text)
+    # OVO PISEM
+    response_json = response.json()
+    print(response_json)
+
+# -------------------------------------------
+
+
+if __name__ == "__main__":
+    # pass
+    repoi_sa_najvise_starova()
+
+```
