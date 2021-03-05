@@ -10,7 +10,7 @@ def repoi_sa_najvise_starova():
     # BROJ SA PARMETRIMA page I per_page
     params = {"q": "stars:>48000", "page": 1, "per_page": 1}
 
-    # DODAJEM I prams
+    # DODAJEM I params
     response = requests.get(gh_api_url, params=params)
     print(response.text)
 
