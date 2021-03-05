@@ -420,9 +420,14 @@ def repoi_sa_najvise_starova(query, sort="stars", order="desc"):
          raise RuntimeError(
             f"An error occured! Status code: {response.status_code}")
 
-    response_json = response.json()
+    
+    # IAKO MI OVDE NE TREBA ELSE, IPAK TREBA BITI EKSPLICITAN U OVAKVIM SITUACIJAMA
+    # ZATO OBEZBEDJUJEM ELSE
+    else:
 
-    return response_json["items"]
+        response_json = response.json()
+
+        return response_json["items"]
 
 
 if __name__ == "__main__":
@@ -449,3 +454,4 @@ raise RuntimeError(
 RuntimeError: An error occured! Status code: 404
 ```
 
+RUNTIME ERROR JE EXIT-OVAO MOJ PROGRAM JER NISAM KORISTIO TRY EXCEPT BLOK

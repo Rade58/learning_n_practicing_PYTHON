@@ -14,8 +14,8 @@ def create_query(languages, min_stars=48000):
 def repoi_sa_najvise_starova(query, sort="stars", order="desc"):
 
     # NAMERN OCU SLATI AGAINST INVALID URL
-    # gh_api_url = "https://api.github.com/search/repositories"
-    gh_api_url = "https://i.github.com/search/repositor"
+    gh_api_url = "https://api.github.com/search/repositories"
+    # gh_api_url = "https://i.github.com/search/repositor"
 
     params = {"q": query, "page": 1, "per_page": 8,
               "order": order, "sort": sort}
@@ -28,9 +28,13 @@ def repoi_sa_najvise_starova(query, sort="stars", order="desc"):
         raise RuntimeError(
             f"An error occured! Status code: {response.status_code}")
 
-    response_json = response.json()
+    # IAKO MI OVDE NE TREBA ELSE, IPAK TREBA BITI EKSPLICITAN U OVAKVIM SITUACIJAMA
+    # ZATO OBEZBEDJUJEM ELSE
+    else:
 
-    return response_json["items"]
+        response_json = response.json()
+
+        return response_json["items"]
 
 
 if __name__ == "__main__":
