@@ -1,39 +1,48 @@
 import requests
 
+# PRAVICU OVDE QUERY (TO JE ONO STO TREBA DA BUDE VREDNOST q PARAMS-A)
+# U OVOJ NOVOJ FUNKCIJI
 
-def repoi_sa_najvise_starova():
+# FUNKCIJA CE UZIMATI LISTU LANGUAGE-OVA I MINIMALNI BROJ STAR-OVA
+
+
+def create_query(languages, min_stars=48000):
+    # NA KRAJU STRINGA JE EMOPTY SPACE JER TAKO TO GITHUB OCEKUJE
+    query = f"stars:>{min_stars} "
+
+    # LOOP-UJEM THROUGH languages DA BIH APPENDOVAO SVE TE ZELJENE JEZIKE
+    # NA QUERY
+    for language in languages:
+        query += f"language:{language}"
+
+    return query
+
+# FUNKCIJU REDEFINISEM A UZIMA QUERY
+
+
+def repoi_sa_najvise_starova(query):
     gh_api_url = "https://api.github.com/search/repositories"
 
-    # POVECAVAM BROJ REPO-A KOJE ZELIM DA UZMEM
-    # NEKA IH BUDE 8
-    params = {"q": "stars:>48000", "page": 1, "per_page": 8}
+    # OVDE SAD UMESTO OVOGA
+    # params = {"q": "stars:>48000", "page": 1, "per_page": 8}
+    # KORISTIM PASSED IN QUERY
+    params = {"q": query, "page": 1, "per_page": 8}
 
     response = requests.get(gh_api_url, params=params)
 
     response_json = response.json()
 
-    # ------- OVO SAM COMMENT-OVAO OUT -----------
-    """ print(type(response_json["items"]))
-
-    print(len(response_json["items"]))
-
-    print(response_json["items"][0].keys())  """
-    # --------------------------------------------
-
-    #  OVDE CU SAMO DA RETURN-UJE ITEMS
-
     return response_json["items"]
-
-    # U main (DONJA USLOVNA IZJAVA NASTAVICU SA
-    # IZDVAJANJEM PODATAKA)
 
 # ---------------------------------------------------------
 
 
 if __name__ == "__main__":
     # pass
-    items = repoi_sa_najvise_starova()
-    # LOOPUJEM THROUGH items
+    # OVDE SAD FUNKCIJI MOZES DATI ZELJENI QUERY
+    items = repoi_sa_najvise_starova(
+        create_query(["Python"], 38000))
+
     for item in items:
         current = f"{item['name']} --> {item['language']} --> {item['stargazers_count']}"
         print(current)
