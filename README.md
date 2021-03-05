@@ -29,7 +29,7 @@ print("status code: ", status_code)
 
 **MOZES DA RUN-UJES OVAJ FILE, A ONO STO BI TREBAL ODA VIDIS STAMPANO U TERMINALU JESTE STATUS CODE**
 
-```bash
+```js
 status code:  200
 ```
 
@@ -53,7 +53,7 @@ print("status code: ", status_code)
 
 VIDECES DA JE U TERMINAL-U PRINTED STATUS CODE 404
 
-```bash
+```js
 status code:  404
 ```
 
@@ -84,13 +84,60 @@ status_code = response.status_code
 response_json = response.json()
 
 # PRINTOVACU DA VIDIS KAKO IZGLEDA
-print(response_json)
+print(response_json, type(response_json))
 ```
 
-EVO OVO JE STMPANO
+**NAMERNO SAM STAMPAO DA VIDIM DATA TYPE**
 
 ```py
-['https://cdn.shibe.online/shibes/b9e3d368b4c67ea82910e3323fa6295ed8c1d992.jpg']
+['https://cdn.shibe.online/shibes/b9e3d368b4c67ea82910e3323fa6295ed8c1d992.jpg'] <class 'list'>
+```
+
+**KAO STO VIDIS, VEC IMAS SPREMAN PYTHON LIST SA URL-OM, I MOZES DA GA KORISTIS**
+
+# `requests` LIBRARY JE LIBRRY KOJI TI OLAKSAVA RAD SA XML HttpRequest
+
+TO I SAM MOZES VIDETI
+
+PYTHON STANDARD LIBRARY JE USREDSREDJEN NA NEKE DRUGE STVARI KAO STO JE BACKWARDS COMPATABILITY I SLICNO
+
+ZATO SAM OVDE KORISTIO POMENUTI requests LIBRARY JER JE INTERAKCIJA SA API-EVIMA AS EASY AS POSSIBLE
+
+# SADA CU MALO DA SE IGRAM SA API-EM, TAKO STO CU KORISTITI URL PARAMETERS, KOJE CU USE-OVATI KAO PYTHON VARIABLES
+
+- `code dog.py`
+
+```py
+import requests
+
+# EVO POGLEDAJ OVO SAM COMMENT-OVAO OUT
+# api_url = "https://shibe.online/api/shibes?count=1"
+# DA BI IMAO URL BEZ PARAMETRA
+api_url = "https://shibe.online/api/shibes"
+
+# A OVDE DEFINISEM DICRIONARI SA PARMASIMA
+params = {"count": 8}
+
+# I KAO ARGUMENT get-A DODAJES I PARMAS
+response = requests.get(api_url, params=params)
+
+status_code = response.status_code
+
+print("status code: ", status_code)
+
+response_json = response.json()
+
+print(response_json)
+
+```
+
+RUN-OVAO SAM FAJL I
+
+**SADA SAM DOBIO LISTU 8 URL-OVA IMAGE-OVA OF DOGS**
+
+```JS
+status code:  200
+['https://cdn.shibe.online/shibes/0bad463a428c8e795c1315c0b557055b27548f27.jpg', 'https://cdn.shibe.online/shibes/c35732a669e115d5b8125205a328b96e3f8398ed.jpg', 'https://cdn.shibe.online/shibes/0c30f381ee4f4840d21ecca577b139ed3d68312d.jpg', 'https://cdn.shibe.online/shibes/955e0b2545cb985941a63f0c089c7f7105ffd27d.jpg', 'https://cdn.shibe.online/shibes/ec3da3d78059befbbdbdbe7b2a0a85d550984093.jpg', 'https://cdn.shibe.online/shibes/95ac30154cbf214ea0176dfceeb1717eef472d07.jpg', 'https://cdn.shibe.online/shibes/463fe3a82d20b67a7eaf82640709403cb9784bb2.jpg', 'https://cdn.shibe.online/shibes/a44ce5a3be592dedf0ef01e36ed47c64978e1697.jpg']
 ```
 
 
