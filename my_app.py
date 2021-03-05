@@ -12,7 +12,10 @@ def create_query(languages, min_stars=48000):
 
 
 def repoi_sa_najvise_starova(query, sort="stars", order="desc"):
-    gh_api_url = "https://api.github.com/search/repositories"
+
+    # NAMERN OCU SLATI AGAINST INVALID URL
+    # gh_api_url = "https://api.github.com/search/repositories"
+    gh_api_url = "https://i.github.com/search/repositor"
 
     params = {"q": query, "page": 1, "per_page": 8,
               "order": order, "sort": sort}
